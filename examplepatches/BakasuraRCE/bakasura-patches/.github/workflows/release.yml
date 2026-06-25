@@ -1,0 +1,61 @@
+name: Build and Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    name: Build and Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build
+        env:
+          ORG_GRADLE_PROJECT_githubPackagesUsername: ${{ github.actor }}
+          ORG_GRADLE_PROJECT_githubPackagesPassword: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew :patches:buildAndroid
+
+      - name: Get version
+        id: version
+        run: echo "version=$(grep '^version' gradle.properties | cut -d= -f2 | tr -d ' ')" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "Emby Patches v${{ steps.version.outputs.version }}"
+          body: |
+            ## Emby Patches
+
+            Patch bundle for ReVanced Manager.
+
+            ### Spoof server host
+            Replaces the Emby server validation host with a custom one to bypass premiere checks.
+
+            ### Usage
+            1. Import this `.rvp` file in ReVanced Manager (Patches → ✏️ → + → Select from storage)
+            2. Select the Emby app (com.mb.android)
+            3. Enable "Spoof server host"
+            4. Patch
+          files: |
+            patches/build/libs/patches-${{ steps.version.outputs.version }}.rvp
+          generate_release_notes: false

@@ -1,0 +1,18 @@
+[versions]
+revanced-patcher = "22.0.0"
+# Tracking https://github.com/google/smali/issues/64.
+#noinspection GradleDependency
+smali = "3.0.8"
+agp = "8.2.2"
+annotation = "1.9.1"
+guava = "33.5.0-jre"
+apksig = "9.0.1"
+
+[libraries]
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+patches = { module = "app.revanced:patches" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+apksig = { group = "com.android.tools.build", name = "apksig", version.ref = "apksig" }
+
+[plugins]
+android-library = { id = "com.android.library" }

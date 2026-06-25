@@ -1,0 +1,12 @@
+public final class dropped/patches/fxfileexplorer/unlockplus/UnlockPlusPatchKt {
+	public static final fun getUnlockPlusPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dropped/patches/nova/prime/UnlockPrimePatchKt {
+	public static final fun getUnlockPrimePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dropped/patches/tasker/trial/unlock/UnlockLicensePatchKt {
+	public static final fun getUnlockLicensePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+

@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-06-22T05:03:33",
+  "description": "### \u2728 New Features\n\n* **Gboard:** add `Enable Inline Autofill Suggestions` to restore inline autofill suggestions from password managers and other supported autofill providers.\n\n### \u2728 \u65b0\u529f\u80fd\n\n* **Gboard:** \u65b0\u589e `Enable Inline Autofill Suggestions`\uff0c\u6062\u5fa9\u5bc6\u78bc\u7ba1\u7406\u54e1\u8207\u5176\u4ed6\u652f\u63f4\u7684\u81ea\u52d5\u586b\u5165\u63d0\u4f9b\u8005\u6240\u63d0\u4f9b\u7684\u5167\u5d4c\u81ea\u52d5\u586b\u5165\u5efa\u8b70\u3002\n",
+  "download_url": "https://github.com/jasonwu1994/Gboard-patches/releases/download/v1.12.0/patches-1.12.0.mpp",
+  "signature_download_url": "N/A",
+  "version": "v1.12.0"
+}

@@ -1,0 +1,4 @@
+public final class app/bawr/revanced/patches/signal/SignalKeepKt {
+	public static final fun getSignalPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+

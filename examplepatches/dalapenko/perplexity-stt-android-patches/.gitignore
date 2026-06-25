@@ -1,0 +1,30 @@
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Kotlin / Java / JVM
+*.class
+*.log
+*.jar
+*.rvp
+
+# Keystores and Certificates
+*.keystore
+*.jks
+*.idsig
+
+# User / Local configuration
+local.properties
+gradle.properties
+
+# IDEs (IntelliJ / Android Studio)
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# OS specific files
+.DS_Store
+Thumbs.db

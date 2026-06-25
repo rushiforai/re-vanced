@@ -1,0 +1,211 @@
+import os, sys, json
+import subprocess as sp
+from helper.aapt.aapt import APK
+from helper.revanced import REVANCED_DIR, APK_DIR, ReVanced
+# import pandas as pd
+
+
+rv = ReVanced()
+
+with open(rv.patches_json, 'r') as f:
+    patches_json = json.load(f)
+
+
+def get_latest_app_version(package_name):
+    """
+    Return all compatible app versions for a given package name
+    """
+
+    def version_key(version):
+        return tuple(map(int, (version.split("."))))
+    
+    versions = set()
+    for p in patches_json:
+        if p.get("compatiblePackages"):
+            for package in p["compatiblePackages"]:
+                if package.get("name") and package.get("versions"):
+                    if package["name"] == package_name:
+                        versions.update(package["versions"])
+
+    try:
+        return sorted(versions, key=version_key)[-1]
+    except:
+        return 'Any'
+
+
+def get_compatible_patches(package_name=None, package_version=None) -> set:
+    """
+    Return all compatible patches for a given package name and version
+    """
+    class Patch:
+        def __init__(self, name: str, description: str, use: bool):
+            self.name: str = name
+            self.token: str = self.name.lower().replace(" ", "-").replace("'", "")
+            self.description: str = description
+            # self.version = version        # Removed from latest version
+            self.excluded: bool = not use
+
+    for p in patches_json:
+        # If no compatible package is specified
+        if not p["compatiblePackages"] or package_name is None and package_version is None:  
+            yield Patch(p["name"], p["description"], p["use"]).__dict__
+        else:
+            for package in p["compatiblePackages"]:
+                if package_name == package["name"]:
+                    # If no compatible version is specified or the version is compatible
+                    if not package["versions"] or package_version in package["versions"]:
+                        yield Patch(p["name"], p["description"], p["use"]).__dict__
+
+
+def check_patch_exclusion(patch_name) -> bool:
+    """
+    Return True if a patch is excluded by default
+    """
+    for patch in get_compatible_patches():
+        if patch['name'].lower() == patch_name.lower():
+            return patch['excluded']
+    return False
+
+
+def generate_revanced_args(data) -> str:
+    """
+    Return additional commandline arguments for included/excluded patches
+    """
+    args=[]
+    for patch in data['included_patches']:
+        if check_patch_exclusion(patch):
+            args.append(f'--include')
+            args.append(f'{patch}')
+    for patch in data['excluded_patches']:
+        if not check_patch_exclusion(patch):
+            args.append(f'--exclude')
+            args.append(f'{patch}')
+    return args
+
+
+def data_stream(string) -> str:
+    """
+    Return a string in the format of Server-Sent Events
+    """
+    return 'data:' + string.rstrip() + '\n\n'
+
+
+def read_apk_file(file):
+    """
+    Return package name, version and label of an APK file
+    """
+    apk = APK(file)
+    try:
+        apk_info = {
+            'package_name': apk.package_name,
+            'package_version': apk.version_name,
+            'recommended_version': get_latest_app_version(apk.package_name), 
+            'app_label': apk.app_label
+        }
+        return apk_info
+    except:
+        return None
+
+
+def delete_uploaded_files():
+    """
+    Delete uploaded files
+    """
+    try:
+        os.remove(rv.unpatched)
+        print(f"File '{rv.unpatched}' deleted successfully.")
+    except FileNotFoundError:
+        print(f"File '{rv.unpatched}' not found.")
+    except Exception as e:
+        print(f"Error occurred while deleting file: {e}")
+
+
+def remove_files_in_directory():
+    """
+    Remove all patched and unpatched APK files
+    """
+    try:
+        for file in os.listdir(APK_DIR):
+            file_path = os.path.join(APK_DIR, file)
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+
+        for file in os.listdir(REVANCED_DIR):
+            file_path = os.path.join(REVANCED_DIR, file)
+            if 'revanced-options.json' in file_path:
+                os.remove(file_path)
+                break
+
+    except Exception as e:
+        print(f"Error occurred while removing files: {e}")
+
+
+def start_revanced_patch(args):
+    """
+    Start patching the APK file
+    """
+    if not read_apk_file(rv.unpatched):
+        error = 'Check if you uploaded a valid APK file.'
+        yield data_stream(json.dumps({'error': error}))
+        return
+    
+    command = ["java", "-jar", rv.cli, "patch", "--patch-bundle", rv.patches, "--out", rv.patched, "--options", rv.options, "--merge", rv.integrations, rv.unpatched] + args
+
+    print(command)
+
+    process = sp.Popen(command, stdout=sp.PIPE, stderr=sp.STDOUT, text=True)
+    for line in process.stdout:
+        last_line = line
+        if 'PatchResultError' in line:
+            break
+        elif line.startswith("INFO:"):
+            yield data_stream(json.dumps({'data': line}))
+
+    success_cue_msg = f"INFO: Signing {os.path.basename(rv.unpatched)}"
+    if success_cue_msg not in last_line:
+        error = 'An error occurred while patching the APK file.'
+        yield data_stream(json.dumps({'error': f'ERROR: {error}'}))
+    else:
+        yield data_stream(json.dumps({'data': "INFO: Finished!"}))
+    
+    process.terminate()
+    return
+
+
+def retrieve_patched_apk():
+    """
+    Return the patched APK file
+    """
+    return rv.patched
+
+
+def is_java_sdk_installed():
+    """
+    Return True if Java SDK is installed
+    """
+    try:
+        result = sp.run(['java', '--version'], stdout=sp.PIPE, stderr=sp.PIPE, text=True)
+        if result.returncode == 0:
+            return True
+        return False
+    
+    except FileNotFoundError:
+        return False
+
+
+def get_jdk_url():
+    """
+    Return the download link for Java SDK
+    """
+    jdk_download_links = {
+        "windows": "https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_windows-x64_bin.zip",
+        "mac": "https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_osx-x64_bin.tar.gz",
+        "linux": "https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz"
+    }
+    match sys.platform:
+        case "win32":
+            return jdk_download_links["windows"]
+        case "darwin":
+            return jdk_download_links["mac"]
+        case "linux":
+            return jdk_download_links["linux"]

@@ -1,0 +1,46 @@
+name: Release ReVanced Web App
+
+on:
+  push:
+    branches: 
+    - master
+    paths:
+    - '**/*' # Trigger on any file change except the following
+
+permissions:
+  contents: write
+
+jobs:
+  download-requirements:
+    runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, '[ci]')"
+
+    env:
+      RELEASE_TAG: "release"
+      RELEASE_FILENAME: "revanced-web-app"
+
+    steps:
+    - name: Print env variables
+      run: echo $RELEASE_TAG && echo $RELEASE_FILENAME
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - uses: actions/setup-python@v4
+      with:
+        python-version: 3.10.6
+
+    - name: Download project requirements
+      run: |
+        pip install requests  
+        python .scripts/requirements.py
+
+    - name: Create zip archive
+      run: python .scripts/zip.py $RELEASE_FILENAME
+
+    - name: Create GitHub Release
+      id: create_release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ env.RELEASE_TAG }}
+        files: ${{ env.RELEASE_FILENAME }}.zip

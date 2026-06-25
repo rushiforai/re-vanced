@@ -1,0 +1,8 @@
+public final class app/revanced/patches/warnwetter/firebasegetcert/FirebaseGetCertPatchKt {
+	public static final fun getFirebaseGetCertPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/warnwetter/promocode/PromoCodeUnlockPatchKt {
+	public static final fun getPromoCodeUnlockPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+

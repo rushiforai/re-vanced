@@ -1,0 +1,12 @@
+*cache/
+revanced*.keystore
+*.keystore
+*.jar
+*.apk
+*.aria2
+*.rvp
+*.st
+*aapt2*
+*options.json
+*temporary-files/
+.conform*

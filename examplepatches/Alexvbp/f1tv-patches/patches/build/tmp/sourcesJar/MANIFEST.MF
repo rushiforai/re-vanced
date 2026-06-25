@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Name: F1TV Patches
+Description: Enable UHD/4K on all devices for F1TV
+Version: 1.0.0
+Timestamp: 1772703497059
+Source: https://github.com/Alexvbp/f1tv-patches
+Author: Alexvbp
+Contact: https://github.com/Alexvbp/f1tv-patches
+Website: https://github.com/Alexvbp/f1tv-patches
+License: GNU General Public License v3.0
+

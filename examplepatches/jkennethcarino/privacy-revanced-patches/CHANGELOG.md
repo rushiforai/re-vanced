@@ -1,0 +1,500 @@
+# [4.6.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.5.0...v4.6.0) (2026-02-15)
+
+
+### Bug Fixes
+
+* **Reddit:** Fix push notifications not working ([6bc93dc](https://github.com/jkennethcarino/privacy-revanced-patches/commit/6bc93dc36d88786e99a6aca466e7a0b9bf31f832))
+
+
+### Features
+
+* **Reddit:** Add `Hide Ask button from search bar` patch ([3603bf8](https://github.com/jkennethcarino/privacy-revanced-patches/commit/3603bf8bd1553e6db2d8e097c00c7c28c23beff3))
+* **Reddit:** Add `Hide prominent search bar` patch ([425dcaf](https://github.com/jkennethcarino/privacy-revanced-patches/commit/425dcaf7f4965c0ad5fd0c8027e40bb4ae2e61eb))
+* **Universal:** Add `Spoof Firebase certificate hash` patch ([#58](https://github.com/jkennethcarino/privacy-revanced-patches/issues/58)) ([decf860](https://github.com/jkennethcarino/privacy-revanced-patches/commit/decf86007638553d2e7a35c3fa85bc6060fcea58))
+
+# [4.6.0-dev.4](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.6.0-dev.3...v4.6.0-dev.4) (2026-02-15)
+
+
+### Features
+
+* **Reddit:** Add `Hide Ask button from search bar` patch ([3603bf8](https://github.com/jkennethcarino/privacy-revanced-patches/commit/3603bf8bd1553e6db2d8e097c00c7c28c23beff3))
+
+# [4.6.0-dev.3](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.6.0-dev.2...v4.6.0-dev.3) (2026-02-15)
+
+
+### Features
+
+* **Reddit:** Add `Hide prominent search bar` patch ([425dcaf](https://github.com/jkennethcarino/privacy-revanced-patches/commit/425dcaf7f4965c0ad5fd0c8027e40bb4ae2e61eb))
+
+# [4.6.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.6.0-dev.1...v4.6.0-dev.2) (2026-01-10)
+
+
+### Bug Fixes
+
+* **Reddit:** Fix push notifications not working ([6bc93dc](https://github.com/jkennethcarino/privacy-revanced-patches/commit/6bc93dc36d88786e99a6aca466e7a0b9bf31f832))
+
+# [4.6.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.5.0...v4.6.0-dev.1) (2026-01-10)
+
+
+### Features
+
+* **Universal:** Add `Spoof Firebase certificate hash` patch ([#58](https://github.com/jkennethcarino/privacy-revanced-patches/issues/58)) ([decf860](https://github.com/jkennethcarino/privacy-revanced-patches/commit/decf86007638553d2e7a35c3fa85bc6060fcea58))
+
+# [4.5.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.4.0...v4.5.0) (2025-12-31)
+
+
+### Bug Fixes
+
+* **Reddit:** Support the latest version ([5a47382](https://github.com/jkennethcarino/privacy-revanced-patches/commit/5a47382ca7b07cd76ac73138c034bef1accd7345))
+
+
+### Features
+
+* **Gboard:** Add `Enable clipboard in incognito` patch ([03f6c1f](https://github.com/jkennethcarino/privacy-revanced-patches/commit/03f6c1f11fe8ea6404c9d396402fb9964f3fa360))
+* **Reddit:** Add `Hide community highlights` patch ([bd093d8](https://github.com/jkennethcarino/privacy-revanced-patches/commit/bd093d840efc1fbf51a552d6a2b361786ef08a29))
+* **Reddit:** Add `Open external links directly` patch ([b47df9c](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b47df9c48fb9a13b89265c09ae5c1444b7d997a6))
+
+# [4.5.0-dev.3](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.5.0-dev.2...v4.5.0-dev.3) (2025-12-31)
+
+
+### Features
+
+* **Reddit:** Add `Hide community highlights` patch ([bd093d8](https://github.com/jkennethcarino/privacy-revanced-patches/commit/bd093d840efc1fbf51a552d6a2b361786ef08a29))
+
+# [4.5.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.5.0-dev.1...v4.5.0-dev.2) (2025-12-30)
+
+
+### Features
+
+* **Reddit:** Add `Open external links directly` patch ([b47df9c](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b47df9c48fb9a13b89265c09ae5c1444b7d997a6))
+
+# [4.5.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.4.1-dev.1...v4.5.0-dev.1) (2025-12-23)
+
+
+### Features
+
+* **Gboard:** Add `Enable clipboard in incognito` patch ([03f6c1f](https://github.com/jkennethcarino/privacy-revanced-patches/commit/03f6c1f11fe8ea6404c9d396402fb9964f3fa360))
+
+## [4.4.1-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.4.0...v4.4.1-dev.1) (2025-12-22)
+
+
+### Bug Fixes
+
+* **Reddit:** Support the latest version ([5a47382](https://github.com/jkennethcarino/privacy-revanced-patches/commit/5a47382ca7b07cd76ac73138c034bef1accd7345))
+
+# [4.4.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.3.0...v4.4.0) (2025-12-18)
+
+
+### Bug Fixes
+
+* **Reddit - Remove ads and telemetry:** Respect user's recommendation preferences ([3a820ee](https://github.com/jkennethcarino/privacy-revanced-patches/commit/3a820eef43a7d318ec29ec3cdea36c8ecbac4df1))
+* **Reddit:** Fix Reddit extension conflict with ReVanced's extension ([b770252](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b77025246533bc926c7c4273e2ca5fb90cf9d395))
+
+
+### Features
+
+* **Gboard:** Add `Toggle feature flags` patch ([879b324](https://github.com/jkennethcarino/privacy-revanced-patches/commit/879b324766dcb57395e615f23837f823169d74b5))
+* **Reddit:** Add `Hide share count` patch ([c8cdbaa](https://github.com/jkennethcarino/privacy-revanced-patches/commit/c8cdbaa3fa8c97722641727a97bb503897591366))
+* **Reddit:** Add `Hide upvote scores` patch ([b1bf96c](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b1bf96c89a687b9ff6e69e73ce000744bf620971))
+
+# [4.4.0-dev.5](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.4.0-dev.4...v4.4.0-dev.5) (2025-12-18)
+
+
+### Features
+
+* **Gboard:** Add `Toggle feature flags` patch ([879b324](https://github.com/jkennethcarino/privacy-revanced-patches/commit/879b324766dcb57395e615f23837f823169d74b5))
+
+# [4.4.0-dev.4](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.4.0-dev.3...v4.4.0-dev.4) (2025-12-18)
+
+
+### Features
+
+* **Reddit:** Add `Hide share count` patch ([c8cdbaa](https://github.com/jkennethcarino/privacy-revanced-patches/commit/c8cdbaa3fa8c97722641727a97bb503897591366))
+
+# [4.4.0-dev.3](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.4.0-dev.2...v4.4.0-dev.3) (2025-12-17)
+
+
+### Bug Fixes
+
+* **Reddit - Remove ads and telemetry:** Respect user's recommendation preferences ([3a820ee](https://github.com/jkennethcarino/privacy-revanced-patches/commit/3a820eef43a7d318ec29ec3cdea36c8ecbac4df1))
+
+# [4.4.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.4.0-dev.1...v4.4.0-dev.2) (2025-12-17)
+
+
+### Bug Fixes
+
+* **Reddit:** Fix Reddit extension conflict with ReVanced's extension ([b770252](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b77025246533bc926c7c4273e2ca5fb90cf9d395))
+
+# [4.4.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.3.0...v4.4.0-dev.1) (2025-12-17)
+
+
+### Features
+
+* **Reddit:** Add `Hide upvote scores` patch ([b1bf96c](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b1bf96c89a687b9ff6e69e73ce000744bf620971))
+
+# [4.3.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.2.0...v4.3.0) (2025-12-11)
+
+
+### Bug Fixes
+
+* **Reddit - Remove ads, annoyances, and telemetry:** Support the latest version ([e0ccec9](https://github.com/jkennethcarino/privacy-revanced-patches/commit/e0ccec9cc2a10ac0938dbb99615e23fdc9ebe1ef))
+
+
+### Features
+
+* **Reddit:** Add `Disable screenshot banner` patch ([4d2ee3e](https://github.com/jkennethcarino/privacy-revanced-patches/commit/4d2ee3e1718a0442d1f36c39cd3c38f24981c88b))
+* **Reddit:** Add `Sanitize share links` patch ([0bcdcb8](https://github.com/jkennethcarino/privacy-revanced-patches/commit/0bcdcb86d387073e072abf37cf336926eedbae2f))
+
+# [4.3.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.2.1-dev.1...v4.3.0-dev.1) (2025-12-11)
+
+
+### Features
+
+* **Reddit:** Add `Disable screenshot banner` patch ([4d2ee3e](https://github.com/jkennethcarino/privacy-revanced-patches/commit/4d2ee3e1718a0442d1f36c39cd3c38f24981c88b))
+* **Reddit:** Add `Sanitize share links` patch ([0bcdcb8](https://github.com/jkennethcarino/privacy-revanced-patches/commit/0bcdcb86d387073e072abf37cf336926eedbae2f))
+
+## [4.2.1-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.2.0...v4.2.1-dev.1) (2025-08-31)
+
+
+### Bug Fixes
+
+* **Reddit - Remove ads, annoyances, and telemetry:** Support the latest version ([e0ccec9](https://github.com/jkennethcarino/privacy-revanced-patches/commit/e0ccec9cc2a10ac0938dbb99615e23fdc9ebe1ef))
+
+# [4.2.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.1.0...v4.2.0) (2025-07-13)
+
+
+### Bug Fixes
+
+* **All - Signature:** Use the provided signature when no cert is found in META-INF ([52fbc08](https://github.com/jkennethcarino/privacy-revanced-patches/commit/52fbc08f5e5d7af334911f1ed13a8a6c5e0954c1))
+
+
+### Features
+
+* **All - Change package name:** Add toggles for changing custom permissions and providers ([11122d1](https://github.com/jkennethcarino/privacy-revanced-patches/commit/11122d12af8fd71172d0ba53d8f7bbc23c54cc2e))
+* **All - Identify:** Add `Spoof Advertising ID` patch ([#40](https://github.com/jkennethcarino/privacy-revanced-patches/issues/40)) ([110c7bd](https://github.com/jkennethcarino/privacy-revanced-patches/commit/110c7bd89d5ddae0eb483412efb623e7b90de1e2))
+* **All - Signature:** Use the MT's `ApkSignatureKillerEx` to bypass signature checks ([871ffa7](https://github.com/jkennethcarino/privacy-revanced-patches/commit/871ffa7b67a017f9ee93ee9de1f3948bda8b9ebe))
+* **Reddit:** Add `Remove ads, annoyances, and telemetry` patch ([#44](https://github.com/jkennethcarino/privacy-revanced-patches/issues/44)) ([a43dd38](https://github.com/jkennethcarino/privacy-revanced-patches/commit/a43dd3884550ed87a8982204dc3ed84cacac2c71))
+
+# [4.2.0-dev.4](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.2.0-dev.3...v4.2.0-dev.4) (2025-07-13)
+
+
+### Features
+
+* **Reddit:** Add `Remove ads, annoyances, and telemetry` patch ([#44](https://github.com/jkennethcarino/privacy-revanced-patches/issues/44)) ([a43dd38](https://github.com/jkennethcarino/privacy-revanced-patches/commit/a43dd3884550ed87a8982204dc3ed84cacac2c71))
+
+# [4.2.0-dev.3](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.2.0-dev.2...v4.2.0-dev.3) (2025-05-24)
+
+
+### Bug Fixes
+
+* **All - Signature:** Use the provided signature when no cert is found in META-INF ([52fbc08](https://github.com/jkennethcarino/privacy-revanced-patches/commit/52fbc08f5e5d7af334911f1ed13a8a6c5e0954c1))
+
+
+### Features
+
+* **All - Change package name:** Add toggles for changing custom permissions and providers ([11122d1](https://github.com/jkennethcarino/privacy-revanced-patches/commit/11122d12af8fd71172d0ba53d8f7bbc23c54cc2e))
+
+# [4.2.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.2.0-dev.1...v4.2.0-dev.2) (2025-05-21)
+
+
+### Features
+
+* **All - Signature:** Use the MT's `ApkSignatureKillerEx` to bypass signature checks ([871ffa7](https://github.com/jkennethcarino/privacy-revanced-patches/commit/871ffa7b67a017f9ee93ee9de1f3948bda8b9ebe))
+
+# [4.2.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.1.0...v4.2.0-dev.1) (2025-05-12)
+
+
+### Features
+
+* **All - Identify:** Add `Spoof Advertising ID` patch ([#40](https://github.com/jkennethcarino/privacy-revanced-patches/issues/40)) ([110c7bd](https://github.com/jkennethcarino/privacy-revanced-patches/commit/110c7bd89d5ddae0eb483412efb623e7b90de1e2))
+
+# [4.1.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.0.0...v4.1.0) (2025-04-20)
+
+
+### Features
+
+* **All - Content Blocker:** Add `Block ads, trackers, and analytics` patch ([#37](https://github.com/jkennethcarino/privacy-revanced-patches/issues/37)) ([2ec02ed](https://github.com/jkennethcarino/privacy-revanced-patches/commit/2ec02ed6881a4d4731db5d0ed15467085a23594c))
+* **All - Content Blocker:** Add `Disable mobile ads` patch ([#35](https://github.com/jkennethcarino/privacy-revanced-patches/issues/35)) ([c249e97](https://github.com/jkennethcarino/privacy-revanced-patches/commit/c249e973ecdc3e39de14efcf99e8062a9986e3fc))
+
+# [4.1.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.1.0-dev.1...v4.1.0-dev.2) (2025-04-20)
+
+
+### Features
+
+* **All - Content Blocker:** Add `Block ads, trackers, and analytics` patch ([#37](https://github.com/jkennethcarino/privacy-revanced-patches/issues/37)) ([2ec02ed](https://github.com/jkennethcarino/privacy-revanced-patches/commit/2ec02ed6881a4d4731db5d0ed15467085a23594c))
+
+# [4.1.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.0.0...v4.1.0-dev.1) (2025-04-20)
+
+
+### Features
+
+* **All - Content Blocker:** Add `Disable mobile ads` patch ([#35](https://github.com/jkennethcarino/privacy-revanced-patches/issues/35)) ([c249e97](https://github.com/jkennethcarino/privacy-revanced-patches/commit/c249e973ecdc3e39de14efcf99e8062a9986e3fc))
+
+# [4.0.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.2.0...v4.0.0) (2025-01-19)
+
+
+### Build System
+
+* Bump ReVanced Patcher ([585e891](https://github.com/jkennethcarino/privacy-revanced-patches/commit/585e89126b9bb5da693e1f318f4bb4716fc1effa))
+
+
+### Features
+
+* **Gboard - Always-incognito mode:** Add new fingerprint for incognito mode check ([f068ff5](https://github.com/jkennethcarino/privacy-revanced-patches/commit/f068ff5f76e63f6bd1b77e1a2dcd4b1cc69e9688))
+
+
+### BREAKING CHANGES
+
+* Various APIs have been changed or removed.
+
+# [4.0.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v4.0.0-dev.1...v4.0.0-dev.2) (2025-01-19)
+
+
+### Features
+
+* **Gboard - Always-incognito mode:** Add new fingerprint for incognito mode check ([f068ff5](https://github.com/jkennethcarino/privacy-revanced-patches/commit/f068ff5f76e63f6bd1b77e1a2dcd4b1cc69e9688))
+
+# [4.0.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.2.0...v4.0.0-dev.1) (2025-01-19)
+
+
+### Build System
+
+* Bump ReVanced Patcher ([585e891](https://github.com/jkennethcarino/privacy-revanced-patches/commit/585e89126b9bb5da693e1f318f4bb4716fc1effa))
+
+
+### BREAKING CHANGES
+
+* Various APIs have been changed or removed.
+
+# [3.2.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.1.1...v3.2.0) (2024-08-11)
+
+
+### Features
+
+* **Gboard - Always-incognito mode:** Add new fingerprint for inlined incognito mode check ([6aacbeb](https://github.com/jkennethcarino/privacy-revanced-patches/commit/6aacbebfbae985ea6150fb7fbbc29c4f3d4694d8))
+
+# [3.2.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.1.1...v3.2.0-dev.1) (2024-07-27)
+
+
+### Features
+
+* **Gboard - Always-incognito mode:** Add new fingerprint for inlined incognito mode check ([6aacbeb](https://github.com/jkennethcarino/privacy-revanced-patches/commit/6aacbebfbae985ea6150fb7fbbc29c4f3d4694d8))
+
+## [3.1.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.1.0...v3.1.1) (2024-07-13)
+
+
+### Bug Fixes
+
+* **Gboard:** Implement a new patch to bypass signature checks ([b12ef78](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b12ef78031af7b6263111bff8651e415100b70fb))
+
+## [3.1.1-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.1.0...v3.1.1-dev.1) (2024-07-12)
+
+
+### Bug Fixes
+
+* **Gboard:** Implement a new patch to bypass signature checks ([b12ef78](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b12ef78031af7b6263111bff8651e415100b70fb))
+
+# [3.1.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.0.0...v3.1.0) (2024-04-28)
+
+
+### Features
+
+* **Gboard:** Add `Apply AAPT workaround` patch ([bad3c31](https://github.com/jkennethcarino/privacy-revanced-patches/commit/bad3c31fc212a331661a3eb06590a10afda0a234))
+* **Gboard:** Add `Enable OCR feature for Gboard` patch ([66406a9](https://github.com/jkennethcarino/privacy-revanced-patches/commit/66406a92b6d90c06fad8717b7b2b04c7adc4fd08))
+
+# [3.1.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.1.0-dev.1...v3.1.0-dev.2) (2024-04-28)
+
+
+### Features
+
+* **Gboard:** Add `Enable OCR feature for Gboard` patch ([66406a9](https://github.com/jkennethcarino/privacy-revanced-patches/commit/66406a92b6d90c06fad8717b7b2b04c7adc4fd08))
+
+# [3.1.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.0.0...v3.1.0-dev.1) (2024-04-28)
+
+
+### Features
+
+* **Gboard:** Add `Apply AAPT workaround` patch ([bad3c31](https://github.com/jkennethcarino/privacy-revanced-patches/commit/bad3c31fc212a331661a3eb06590a10afda0a234))
+
+# [3.0.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v2.1.0...v3.0.0) (2024-04-16)
+
+
+### Code Refactoring
+
+* Update package location and extension functions ([94254d6](https://github.com/jkennethcarino/privacy-revanced-patches/commit/94254d629ccf7305d068659b171e9b80b4531532))
+
+
+### Features
+
+* **Gboard:** Add `Enable Undo feature for Gboard` patch ([6804fd7](https://github.com/jkennethcarino/privacy-revanced-patches/commit/6804fd725764ee59690e9cabe2adc83ecbf8c2df))
+
+
+### BREAKING CHANGES
+
+* Various public APIs have changed names and Gboard package was moved.
+
+# [3.0.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v3.0.0-dev.1...v3.0.0-dev.2) (2024-04-16)
+
+
+### Features
+
+* **Gboard:** Add `Enable Undo feature for Gboard` patch ([6804fd7](https://github.com/jkennethcarino/privacy-revanced-patches/commit/6804fd725764ee59690e9cabe2adc83ecbf8c2df))
+
+# [3.0.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v2.1.0...v3.0.0-dev.1) (2024-04-16)
+
+
+### Code Refactoring
+
+* Update package location and extension functions ([94254d6](https://github.com/jkennethcarino/privacy-revanced-patches/commit/94254d629ccf7305d068659b171e9b80b4531532))
+
+
+### BREAKING CHANGES
+
+* Various public APIs have changed names and Gboard package was moved.
+
+# [2.1.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v2.0.3...v2.1.0) (2024-04-07)
+
+
+### Features
+
+* **Gboard:** Add `Always-incognito mode for Gboard` patch ([2a98c21](https://github.com/jkennethcarino/privacy-revanced-patches/commit/2a98c21685f4959c662df443cb12146a2178cc66))
+
+# [2.1.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v2.0.3...v2.1.0-dev.1) (2024-04-07)
+
+
+### Features
+
+* **Gboard:** Add `Always-incognito mode for Gboard` patch ([2a98c21](https://github.com/jkennethcarino/privacy-revanced-patches/commit/2a98c21685f4959c662df443cb12146a2178cc66))
+
+## [2.0.3](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v2.0.2...v2.0.3) (2024-04-05)
+
+
+### Bug Fixes
+
+* **All - Signature:** Fix broken patch after the recent ReVanced Manager's update ([de6ae00](https://github.com/jkennethcarino/privacy-revanced-patches/commit/de6ae00b2e67564d1d9ed2b6a1230e6aa55cdab3))
+
+## [2.0.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v2.0.1...v2.0.2) (2024-04-02)
+
+
+### Bug Fixes
+
+* **All - Signature:** Attempt to fix `NoSuchProviderException` ([1facc0e](https://github.com/jkennethcarino/privacy-revanced-patches/commit/1facc0e25cfcf46ccf9746f3286e5558f864f167))
+
+## [2.0.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v2.0.0...v2.0.1) (2024-04-02)
+
+
+### Bug Fixes
+
+* **All - Signature:** Fix missing Bouncy Castle dependency ([5272e01](https://github.com/jkennethcarino/privacy-revanced-patches/commit/5272e018b70f52bc0fbf4bed1eac8e90c8b08022))
+
+# [2.0.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.3.1...v2.0.0) (2024-04-01)
+
+
+### Features
+
+* **All - Signature:** Add `Bypass signature verification checks` patch ([4952e01](https://github.com/jkennethcarino/privacy-revanced-patches/commit/4952e019fc50ede7e6921718c183fab0e9f0e6d0))
+
+
+### BREAKING CHANGES
+
+* **All - Signature:** Gboard's `Bypass signature verification checks` patch has been removed and replaced with a universal patch.
+
+# [2.0.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.3.1...v2.0.0-dev.1) (2024-04-01)
+
+
+### Features
+
+* **All - Signature:** Add `Bypass signature verification checks` patch ([4952e01](https://github.com/jkennethcarino/privacy-revanced-patches/commit/4952e019fc50ede7e6921718c183fab0e9f0e6d0))
+
+
+### BREAKING CHANGES
+
+* **All - Signature:** Gboard's `Bypass signature verification checks` patch has been removed and replaced with a universal patch.
+
+## [1.3.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.3.0...v1.3.1) (2024-03-30)
+
+
+### Bug Fixes
+
+* **Change package name:** Fix installation issue due to conflicting provider name ([d79c532](https://github.com/jkennethcarino/privacy-revanced-patches/commit/d79c5321dc701d9f586316bca7e32e5f9395940e))
+
+## [1.3.1-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.3.0...v1.3.1-dev.1) (2024-03-30)
+
+
+### Bug Fixes
+
+* **Change package name:** Fix installation issue due to conflicting provider name ([d79c532](https://github.com/jkennethcarino/privacy-revanced-patches/commit/d79c5321dc701d9f586316bca7e32e5f9395940e))
+
+# [1.3.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.2.0...v1.3.0) (2024-03-29)
+
+
+### Features
+
+* **All - Package Name:** Add `Change package name` patch ([64c0d61](https://github.com/jkennethcarino/privacy-revanced-patches/commit/64c0d6166d3658ae9047e465d8ee3710b6ed7328))
+* **Gboard:** Add `Bypass Gboard signature verification checks` patch ([ba7db6a](https://github.com/jkennethcarino/privacy-revanced-patches/commit/ba7db6a1ae42f84666d9cd5c797fd7fa2c33171f))
+
+# [1.3.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.3.0-dev.1...v1.3.0-dev.2) (2024-03-29)
+
+
+### Features
+
+* **All - Package Name:** Add `Change package name` patch ([64c0d61](https://github.com/jkennethcarino/privacy-revanced-patches/commit/64c0d6166d3658ae9047e465d8ee3710b6ed7328))
+
+# [1.3.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.2.0...v1.3.0-dev.1) (2024-03-29)
+
+
+### Features
+
+* **Gboard:** Add `Bypass Gboard signature verification checks` patch ([ba7db6a](https://github.com/jkennethcarino/privacy-revanced-patches/commit/ba7db6a1ae42f84666d9cd5c797fd7fa2c33171f))
+
+# [1.2.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.1.0...v1.2.0) (2024-03-24)
+
+
+### Features
+
+* **All - Firebase:** Add `Deactivate Firebase Analytics` patch ([a10d712](https://github.com/jkennethcarino/privacy-revanced-patches/commit/a10d7121116dda9ecec9c857a03c69b82a98157f))
+* **All - Firebase:** Add `Deactivate Firebase Performance Monitoring` patch ([b0ac188](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b0ac18839d960e084da79667d0959eec9fc54357))
+
+# [1.2.0-dev.2](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2024-03-24)
+
+
+### Features
+
+* **All - Firebase:** Add `Deactivate Firebase Analytics` patch ([a10d712](https://github.com/jkennethcarino/privacy-revanced-patches/commit/a10d7121116dda9ecec9c857a03c69b82a98157f))
+
+# [1.2.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.1.0...v1.2.0-dev.1) (2024-03-17)
+
+
+### Features
+
+* **All - Firebase:** Add `Deactivate Firebase Performance Monitoring` patch ([b0ac188](https://github.com/jkennethcarino/privacy-revanced-patches/commit/b0ac18839d960e084da79667d0959eec9fc54357))
+
+# [1.1.0](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.0.0...v1.1.0) (2024-03-13)
+
+
+### Features
+
+* **All - WebView:** Add `Disable Google Safe Browsing in WebView` patch ([8dfd017](https://github.com/jkennethcarino/privacy-revanced-patches/commit/8dfd017d387a13f59816a805a860fd66293ae52a))
+* **All - WebView:** Add `Disable metrics collection in WebView` patch ([d038291](https://github.com/jkennethcarino/privacy-revanced-patches/commit/d03829128f244affe286af0249a94c8d450916cf))
+
+# [1.1.0-dev.1](https://github.com/jkennethcarino/privacy-revanced-patches/compare/v1.0.0...v1.1.0-dev.1) (2024-03-13)
+
+
+### Features
+
+* **All - WebView:** Add `Disable Google Safe Browsing in WebView` patch ([8dfd017](https://github.com/jkennethcarino/privacy-revanced-patches/commit/8dfd017d387a13f59816a805a860fd66293ae52a))
+* **All - WebView:** Add `Disable metrics collection in WebView` patch ([d038291](https://github.com/jkennethcarino/privacy-revanced-patches/commit/d03829128f244affe286af0249a94c8d450916cf))
+
+# 1.0.0 (2024-03-03)
+
+
+### Features
+
+* **All:** Add `Remove internet permission` patch ([5c7e3d5](https://github.com/jkennethcarino/privacy-revanced-patches/commit/5c7e3d5883ed8b16d76bb61f63b548913fb9bb57))
+
+# 1.0.0-dev.1 (2024-03-03)
+
+
+### Features
+
+* **All:** Add `Remove internet permission` patch ([5c7e3d5](https://github.com/jkennethcarino/privacy-revanced-patches/commit/5c7e3d5883ed8b16d76bb61f63b548913fb9bb57))

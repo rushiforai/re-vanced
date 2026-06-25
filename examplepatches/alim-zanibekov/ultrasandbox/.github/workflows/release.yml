@@ -1,0 +1,72 @@
+name: Build and Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: cachix/install-nix-action@v27
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+          extra_nix_config: |
+            accept-flake-config = true
+
+      - name: Build .rvp
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}" \
+            nix develop --command build-rvp "$GITHUB_WORKSPACE" "$GITHUB_WORKSPACE/build/ultrasandbox-patches.rvp"
+
+      - name: Verify
+        run: |
+          nix develop --command revanced-cli list-patches \
+            -p "$GITHUB_WORKSPACE/build/ultrasandbox-patches.rvp" -b
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ultrasandbox-patches
+          path: build/ultrasandbox-patches.rvp
+
+      - name: Generate patches.json for ReVanced Manager
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          REPO="${GITHUB_REPOSITORY}"
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%S")
+          cat > build/patches.json << EOF
+          {
+            "download_url": "https://github.com/${REPO}/releases/download/${GITHUB_REF_NAME}/ultrasandbox-patches.rvp",
+            "created_at": "${TIMESTAMP}",
+            "description": "UltraSandbox ${VERSION}",
+            "version": "${VERSION}"
+          }
+          EOF
+
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            build/ultrasandbox-patches.rvp
+            build/patches.json
+          generate_release_notes: true
+          body: |
+            ### Install
+
+            **ReVanced Manager** (recommended):
+            1. Patches > Add > Enter URL > paste:
+               `https://github.com/${{ github.repository }}/releases/latest/download/patches.json`
+            2. Select app > enable UltraSandbox > Patch
+
+            **revanced-cli**:
+            ```
+            java -jar revanced-cli.jar patch -p ultrasandbox-patches.rvp -b --force app.apk
+            ```

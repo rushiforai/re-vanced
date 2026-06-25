@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/top_app_bar"
+            app:title="@string/app_name" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/yt_info_card"
+                    style="?attr/materialCardViewOutlinedStyle"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toTopOf="@id/ytm_info_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15sp">
+
+                        <TextView
+                            android:id="@+id/yt_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20sp"
+                            android:text="@string/yt_info_title"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/installed_yt_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/installed_app_version"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/latest_yt_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5sp"
+                            android:text="@string/latest_app_version"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/yt_update_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update_status"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/yt_uninstall_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginTop="5sp"
+                            android:contentDescription="@string/yt_uninstall_button_description"
+                            android:enabled="false"
+                            android:text="@string/uninstall_button_text"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/yt_download_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginTop="5sp"
+                            android:contentDescription="@string/yt_download_button_description"
+                            android:enabled="false"
+                            android:visibility="visible"
+                            android:onClick="downloadYt"
+                            android:text="@string/download_button_text" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/yt_download_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ytm_info_card"
+                    style="?attr/materialCardViewOutlinedStyle"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toTopOf="@id/microg_info_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/yt_info_card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15sp">
+
+                        <TextView
+                            android:id="@+id/ytm_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20sp"
+                            android:text="@string/ytm_info_title"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/installed_ytm_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/installed_app_version"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/latest_ytm_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5sp"
+                            android:text="@string/latest_app_version"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/ytm_update_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update_status"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/ytm_uninstall_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginTop="5sp"
+                            android:contentDescription="@string/ytm_uninstall_button_description"
+                            android:enabled="false"
+                            android:text="@string/uninstall_button_text"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/ytm_download_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginTop="5sp"
+                            android:contentDescription="@string/ytm_download_button_description"
+                            android:enabled="false"
+                            android:visibility="visible"
+                            android:onClick="downloadYtm"
+                            android:text="@string/download_button_text" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/ytm_download_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/microg_info_card"
+                    style="?attr/materialCardViewOutlinedStyle"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toTopOf="@id/updater_info_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ytm_info_card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15sp">
+
+                        <TextView
+                            android:id="@+id/microg_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20sp"
+                            android:text="@string/microg_info_title"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/installed_microg_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/installed_app_version"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/latest_microg_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5sp"
+                            android:text="@string/latest_app_version"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/microg_update_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update_status"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/microg_uninstall_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginTop="5sp"
+                            android:contentDescription="@string/microg_uninstall_button_description"
+                            android:enabled="false"
+                            android:text="@string/uninstall_button_text"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/microg_download_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginTop="5sp"
+                            android:contentDescription="@string/microg_download_button_description"
+                            android:enabled="false"
+                            android:visibility="visible"
+                            android:onClick="downloadMicroG"
+                            android:text="@string/download_button_text" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/microg_download_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/updater_info_card"
+                    style="?attr/materialCardViewOutlinedStyle"
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="8dp"
+                    android:checkable="false"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/microg_info_card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15sp">
+
+                        <TextView
+                            android:id="@+id/updater_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="20sp"
+                            android:text="@string/app_name"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/installed_updater_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/installed_app_version"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/latest_updater_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5sp"
+                            android:text="@string/latest_app_version"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/updater_update_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5sp"
+                            android:text="@string/update_status"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/updater_download_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:contentDescription="@string/updater_download_button_description"
+                            android:enabled="false"
+                            android:onClick="downloadUpdater"
+                            android:text="@string/download_button_text" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/updater_download_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="20sp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20sp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/hold_app_card"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:paddingBottom="80dp"
+                    android:text="@string/disclaimer"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

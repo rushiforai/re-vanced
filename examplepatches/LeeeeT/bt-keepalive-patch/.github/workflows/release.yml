@@ -1,0 +1,85 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to release (e.g. v1.0.0). Must already exist or be created here.'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.tag || github.ref }}
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v6
+
+      - name: Resolve tag and version
+        id: meta
+        run: |
+          tag="${{ inputs.tag || github.ref_name }}"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "version=${tag#v}" >> "$GITHUB_OUTPUT"
+          echo "created_at=$(date -u +%Y-%m-%dT%H:%M:%S)" >> "$GITHUB_OUTPUT"
+
+      - name: Build patch bundle
+        env:
+          # The ReVanced gradle plugin is hosted on GitHub Packages, which
+          # requires a token with the `read:packages` scope. The default
+          # GITHUB_TOKEN cannot access another org's Maven packages, so a
+          # personal token has to be supplied as a repository secret.
+          ORG_GRADLE_PROJECT_githubPackagesUsername: ${{ secrets.REVANCED_PACKAGES_USERNAME || github.actor }}
+          ORG_GRADLE_PROJECT_githubPackagesPassword: ${{ secrets.REVANCED_PACKAGES_TOKEN }}
+        run: ./gradlew :patches:buildAndroid -Pversion=${{ steps.meta.outputs.version }} --no-daemon
+
+      - name: Stage release assets
+        env:
+          TAG: ${{ steps.meta.outputs.tag }}
+          VERSION: ${{ steps.meta.outputs.version }}
+          CREATED_AT: ${{ steps.meta.outputs.created_at }}
+        run: |
+          mkdir -p release
+          # Stable filename so the releases/latest/download URL never changes.
+          cp patches/build/libs/patches-*.rvp release/patches.rvp
+
+          # Descriptor consumed by ReVanced Manager's "Enter URL" feature.
+          # The shape is the ReVancedAsset DTO from revanced-manager.
+          cat > release/revanced-asset.json <<JSON
+          {
+            "download_url": "https://github.com/${{ github.repository }}/releases/latest/download/patches.rvp",
+            "created_at": "$CREATED_AT",
+            "description": "Bluetooth audio keep-alive patch, version $VERSION.",
+            "version": "$VERSION"
+          }
+          JSON
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bundle-${{ steps.meta.outputs.version }}
+          path: release/*
+          if-no-files-found: error
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.meta.outputs.tag }}
+        run: |
+          gh release view "$TAG" >/dev/null 2>&1 \
+            && gh release upload "$TAG" release/* --clobber \
+            || gh release create "$TAG" release/* --title "$TAG" --generate-notes

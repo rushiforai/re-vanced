@@ -1,0 +1,8 @@
+public final class app/revanced/patches/debridstream/misc/pro/UnlockProPatchKt {
+	public static final fun getUnlockProPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class app/revanced/patches/macrofactor/misc/subscription/UnlockSubscriptionPatchKt {
+	public static final fun getUnlockSubscriptionPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+

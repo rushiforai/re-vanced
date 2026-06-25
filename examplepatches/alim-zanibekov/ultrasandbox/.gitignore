@@ -1,0 +1,20 @@
+# artifacts
+output/
+*.apk
+*.keystore
+*.rve
+
+# nix
+result
+.direnv/
+
+# gradle
+.gradle/
+build/
+local.properties
+gradle-wrapper.jar
+
+# misc
+.idea/
+*.iml
+.DS_Store

@@ -1,0 +1,201 @@
+public final class dev/jkcarino/revanced/patches/all/contentblocker/ads/DisableMobileAdsPatchKt {
+	public static final fun getDisableMobileAdsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/contentblocker/hosts/HostBlocker {
+	public fun <init> ()V
+	public final fun clear ()V
+	public final fun extractHost (Ljava/lang/String;)Ljava/lang/String;
+	public final fun isBlocked (Ljava/lang/String;)Z
+	public final fun parse (Ljava/io/File;)V
+}
+
+public final class dev/jkcarino/revanced/patches/all/contentblocker/hosts/HostsBlockerPatchKt {
+	public static final fun getHostsBlockerPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/detection/signature/pms/BypassSignatureChecksPatchKt {
+	public static final fun getBypassSignatureChecksPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/detection/signature/pms/EncodeCertificatePatchKt {
+	public static final fun getEncodeCertificatePatch ()Lapp/revanced/patcher/patch/RawResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/detection/signature/pms/PackageNamePatchKt {
+	public static final fun getPackageNamePatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/detection/signature/pms/ReplaceSubApplicationPatchKt {
+	public static final fun getReplaceSubApplicationPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/firebase/analytics/DeactivateFirebaseAnalyticsPatchKt {
+	public static final fun getDeactivateFirebaseAnalyticsPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/firebase/analytics/RemoveAdsServicesPatchKt {
+	public static final fun getRemoveAdsServicesPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/firebase/analytics/RemoveAdvertisingIdPatchKt {
+	public static final fun getRemoveAdvertisingIdPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/firebase/analytics/RemoveAppMeasurementPatchKt {
+	public static final fun getRemoveAppMeasurementPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/firebase/analytics/RemoveGoogleAnalyticsPatchKt {
+	public static final fun getRemoveGoogleAnalyticsPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/firebase/installations/BaseSpoofAndroidCertPatchKt {
+	public static final fun baseSpoofAndroidCertPatch (Lkotlin/jvm/functions/Function0;)Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/firebase/installations/SpoofAndroidCertPatchKt {
+	public static final fun getSpoofAndroidCertPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/firebase/performance/DeactivateFirebasePerfPatchKt {
+	public static final fun getDeactivateFirebasePerfPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/misc/identity/advertising/SpoofAdvertisingIdPatchKt {
+	public static final fun getSpoofAdvertisingIdPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/misc/network/RemoveInternetPermissionPatchKt {
+	public static final fun getRemoveInternetPermissionPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/misc/packagename/ChangePackageNamePatchKt {
+	public static final fun getChangePackageNamePatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/webview/DisableWebViewMetricsPatchKt {
+	public static final fun getDisableWebViewMetricsPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/all/webview/DisableWebViewSafeBrowsingPatchKt {
+	public static final fun getDisableWebViewSafeBrowsingPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/google/gboard/detection/signature/BypassSignaturePatchKt {
+	public static final fun getBypassSignaturePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/google/gboard/featureflags/ToggleFeatureFlagsPatchKt {
+	public static final fun getToggleFeatureFlagsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/google/gboard/fixes/ApplyWorkaroundPatchKt {
+	public static final fun getApplyWorkaround ()Lapp/revanced/patcher/patch/ResourcePatch;
+	public static final fun getApplyWorkaroundPatch ()Lapp/revanced/patcher/patch/ResourcePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/google/gboard/incognito/clipboard/EnableClipboardPatchKt {
+	public static final fun getEnableClipboardPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/google/gboard/misc/incognito/AlwaysIncognitoModePatchKt {
+	public static final fun getAlwaysIncognitoModePatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/google/gboard/misc/ocr/EnableOcrPatchKt {
+	public static final fun getEnableOcrPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/google/gboard/misc/undo/EnableUndoPatchKt {
+	public static final fun getEnableUndoPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/RemoveAdsAndTelemetryPatchKt {
+	public static final fun getRemoveAdsAndTelemetry ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/ad/RemoveAdsAndTelemetryPatchKt {
+	public static final fun getRemoveAdsAndTelemetryPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/layout/actions/score/HideScoresPatchKt {
+	public static final fun getHideScoresPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/layout/actions/share/HideShareCountPatchKt {
+	public static final fun getHideShareCountPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/layout/communityhighlights/HideCommunityHighlightsPatchKt {
+	public static final fun getHideCommunityHighlightsPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/layout/screenshotbanner/DisableScreenshotBannerPatchKt {
+	public static final fun getDisableScreenshotBannerPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/layout/search/ask/HideSearchAskButtonPatchKt {
+	public static final fun getHideSearchAskButtonPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/layout/search/searchbar/HideProminentSearchBarPatchKt {
+	public static final fun getHideProminentSearchBarPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/misc/firebase/SpoofAndroidCertPatchKt {
+	public static final fun getSpoofCertificateHashPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/misc/outboundlink/OpenLinksDirectlyPatchKt {
+	public static final fun getOpenLinksDirectlyPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/misc/sharing/url/SanitizeShareLinkPatchKt {
+	public static final fun getSanitizeShareLinkPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
+public final class dev/jkcarino/revanced/patches/reddit/shared/util/BytecodeUtilsKt {
+	public static final fun updateClassField (Lapp/revanced/patcher/patch/BytecodePatchContext;Lcom/android/tools/smali/dexlib2/iface/ClassDef;Lcom/android/tools/smali/dexlib2/iface/reference/FieldReference;Ljava/lang/Object;)V
+}
+
+public final class dev/jkcarino/revanced/patches/shared/resource/ManifestKt {
+	public static final fun androidManifest (Lapp/revanced/patcher/patch/ResourcePatchContext;Lkotlin/jvm/functions/Function1;)Lorg/w3c/dom/Document;
+	public static final fun metaData (Lorg/w3c/dom/Document;[Lkotlin/Pair;)V
+	public static final fun removeProperty (Lorg/w3c/dom/Document;[Ljava/lang/String;)V
+	public static final fun removeReceiver (Lorg/w3c/dom/Document;[Ljava/lang/String;)V
+	public static final fun removeService (Lorg/w3c/dom/Document;[Ljava/lang/String;)V
+	public static final fun removeUsesPermission (Lorg/w3c/dom/Document;[Ljava/lang/String;)V
+}
+
+public final class dev/jkcarino/revanced/util/BytecodeUtilsKt {
+	public static final fun containsLiteralInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;J)Z
+	public static final fun filterMethods (Lcom/android/tools/smali/dexlib2/iface/ClassDef;Lkotlin/jvm/functions/Function2;)Ljava/util/List;
+	public static final fun filterMethods (Ljava/util/List;Lkotlin/jvm/functions/Function2;)Ljava/util/List;
+	public static final fun findMutableFieldOf (Lapp/revanced/patcher/util/proxy/mutableTypes/MutableClass;Lcom/android/tools/smali/dexlib2/iface/Field;)Lapp/revanced/patcher/util/proxy/mutableTypes/MutableField;
+	public static final fun findMutableMethodOf (Lapp/revanced/patcher/util/proxy/mutableTypes/MutableClass;Lcom/android/tools/smali/dexlib2/iface/Method;)Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;
+	public static final fun indexOfFirstLiteralInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;J)I
+	public static final fun literal (Lapp/revanced/patcher/FingerprintBuilder;Lkotlin/jvm/functions/Function0;)V
+	public static final fun proxy (Lapp/revanced/patcher/patch/BytecodePatchContext;Ljava/lang/String;)Lapp/revanced/patcher/util/proxy/ClassProxy;
+	public static final fun returnEarly (Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;Z)V
+	public static synthetic fun returnEarly$default (Lapp/revanced/patcher/util/proxy/mutableTypes/MutableMethod;ZILjava/lang/Object;)V
+	public static final fun transformMethods (Lapp/revanced/patcher/util/proxy/mutableTypes/MutableClass;Lkotlin/jvm/functions/Function1;)V
+	public static final fun traverseClassHierarchy (Lapp/revanced/patcher/patch/BytecodePatchContext;Lapp/revanced/patcher/util/proxy/mutableTypes/MutableClass;Lkotlin/jvm/functions/Function1;)V
+}
+
+public final class dev/jkcarino/revanced/util/ResourceUtilsKt {
+	public static final fun asAttributeSequence (Lorg/w3c/dom/NamedNodeMap;)Lkotlin/sequences/Sequence;
+	public static final fun asElementSequence (Lorg/w3c/dom/NodeList;)Lkotlin/sequences/Sequence;
+	public static final fun createElement (Lorg/w3c/dom/Document;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lorg/w3c/dom/Element;
+	public static final fun filterElements (Lorg/w3c/dom/NodeList;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
+	public static final fun get (Lorg/w3c/dom/Document;Ljava/lang/String;)Lorg/w3c/dom/Element;
+	public static final fun get (Lorg/w3c/dom/Element;Ljava/lang/String;)Ljava/lang/String;
+	public static final fun removeElements (Lorg/w3c/dom/Node;Ljava/util/List;)V
+	public static final fun set (Lorg/w3c/dom/Element;Ljava/lang/String;Ljava/lang/String;)V
+}
+
+public final class dev/jkcarino/revanced/util/transformation/TransformationPatchKt {
+	public static final fun transformationPatch (Lapp/revanced/patcher/patch/BytecodePatchContext;Lcom/android/tools/smali/dexlib2/iface/ClassDef;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function4;Lkotlin/jvm/functions/Function2;)V
+	public static synthetic fun transformationPatch$default (Lapp/revanced/patcher/patch/BytecodePatchContext;Lcom/android/tools/smali/dexlib2/iface/ClassDef;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function4;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)V
+}
+

@@ -1,0 +1,32 @@
+# Ignore cache
+**/__pycache__/
+**/revanced-cache/
+**/revanced-resource-cache/
+
+.preview/unused/
+
+# Ignore ReVanced dependencies
+revanced-cli*.jar
+revanced-patches*.jar
+revanced-patches*.json
+revanced-integrations*.apk
+revanced-cli*.jar
+patches*.jar
+patches*.json
+integrations*.apk
+options.json
+
+# Ignore stuff
+# ignore any files of any type that starts with launch
+launcher.*
+static/unused/*
+templates/unused/*
+/bin/**
+/helper/aapt
+test.py
+scripts
+
+venv/
+.preview
+unpatched.apk
+my_command.txt

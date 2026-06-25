@@ -1,0 +1,24 @@
+name: Open a PR to main
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+
+env:
+  MESSAGE: "Merge branch \\`${{ github.head_ref || github.ref_name }}\\` to \\`main\\`"
+  GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+
+jobs:
+  pull-request:
+    name: Open pull request
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Open pull request
+        run: |
+             gh pr create --draft --base main --title "chore: ${{ env.MESSAGE }}" --body "This pull request will ${{ env.MESSAGE }}."

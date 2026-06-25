@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-06-25T03:06:21",
+  "description": "## [1.5.3](https://github.com/ajstrick81/morphe-androidtv-patches/compare/v1.5.2...v1.5.3) (2026-06-25)\n\n\n### Bug Fixes\n\n* **peacock:** Layer 11 media-client coverage + SAS/VAC shard matching ([#27](https://github.com/ajstrick81/morphe-androidtv-patches/issues/27)) ([a132655](https://github.com/ajstrick81/morphe-androidtv-patches/commit/a132655743cff6cdf56e7ff65be3150952544759))\n\n\n\n",
+  "download_url": "https://github.com/ajstrick81/morphe-androidtv-patches/releases/download/v1.5.3/patches-1.5.3.mpp",
+  "signature_download_url": "N/A",
+  "version": "v1.5.3"
+}

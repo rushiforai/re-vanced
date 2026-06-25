@@ -1,0 +1,285 @@
+## [1.7.1](https://github.com/Tosox/revanced-patches/compare/v1.7.0...v1.7.1) (2026-06-12)
+
+
+### Bug Fixes
+
+* **kicker:** Update utils to fix patch ([ca87a8b](https://github.com/Tosox/revanced-patches/commit/ca87a8b3a34f62ba3ad2fa134210a5a8720ea659))
+
+## [1.7.1-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.7.0...v1.7.1-dev.1) (2026-06-12)
+
+
+### Bug Fixes
+
+* **kicker:** Update utils to fix patch ([ca87a8b](https://github.com/Tosox/revanced-patches/commit/ca87a8b3a34f62ba3ad2fa134210a5a8720ea659))
+
+# [1.7.0](https://github.com/Tosox/revanced-patches/compare/v1.6.0...v1.7.0) (2026-06-12)
+
+
+### Bug Fixes
+
+* **kicker:** Update Pur & Plus patches ([22897d1](https://github.com/Tosox/revanced-patches/commit/22897d152bc2c9ab474596bca053965d910dffc4))
+
+
+### Features
+
+* Add helper method ([4e0df49](https://github.com/Tosox/revanced-patches/commit/4e0df499d760b94054a933c24fe08fadb0dca1da))
+
+# [1.7.0-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.6.0...v1.7.0-dev.1) (2026-06-12)
+
+
+### Bug Fixes
+
+* **kicker:** Update Pur & Plus patches ([22897d1](https://github.com/Tosox/revanced-patches/commit/22897d152bc2c9ab474596bca053965d910dffc4))
+
+
+### Features
+
+* Add helper method ([4e0df49](https://github.com/Tosox/revanced-patches/commit/4e0df499d760b94054a933c24fe08fadb0dca1da))
+
+# [1.6.0](https://github.com/Tosox/revanced-patches/compare/v1.5.2...v1.6.0) (2026-04-08)
+
+
+### Bug Fixes
+
+* **Super Mario:** Refactor to shared permission removal patch ([29aaf11](https://github.com/Tosox/revanced-patches/commit/29aaf11fdaf6cc0235ced96a7d83655b2709a8f6))
+* **TickTick:** Replace deprecated imports ([8bc637d](https://github.com/Tosox/revanced-patches/commit/8bc637d640c52920ab0674e9eb7cfc353d12ecdd))
+
+
+### Features
+
+* **Duolingo:** Add Unlock Premium patch ([0ee0bf3](https://github.com/Tosox/revanced-patches/commit/0ee0bf3f18a9751033a51257d95035b2e79653eb))
+* **Strong:** Add Unlock Pro patch ([274961d](https://github.com/Tosox/revanced-patches/commit/274961d012fd91c370652b0ca213b4ad488f6849))
+
+# [1.6.0-dev.4](https://github.com/Tosox/revanced-patches/compare/v1.6.0-dev.3...v1.6.0-dev.4) (2026-04-08)
+
+
+### Bug Fixes
+
+* **Super Mario:** Refactor to shared permission removal patch ([29aaf11](https://github.com/Tosox/revanced-patches/commit/29aaf11fdaf6cc0235ced96a7d83655b2709a8f6))
+
+# [1.6.0-dev.3](https://github.com/Tosox/revanced-patches/compare/v1.6.0-dev.2...v1.6.0-dev.3) (2026-04-08)
+
+
+### Bug Fixes
+
+* **TickTick:** Replace deprecated imports ([8bc637d](https://github.com/Tosox/revanced-patches/commit/8bc637d640c52920ab0674e9eb7cfc353d12ecdd))
+
+# [1.6.0-dev.2](https://github.com/Tosox/revanced-patches/compare/v1.6.0-dev.1...v1.6.0-dev.2) (2026-04-08)
+
+
+### Features
+
+* **Duolingo:** Add Unlock Premium patch ([0ee0bf3](https://github.com/Tosox/revanced-patches/commit/0ee0bf3f18a9751033a51257d95035b2e79653eb))
+
+# [1.6.0-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.5.2...v1.6.0-dev.1) (2026-04-07)
+
+
+### Features
+
+* **Strong:** Add Unlock Pro patch ([274961d](https://github.com/Tosox/revanced-patches/commit/274961d012fd91c370652b0ca213b4ad488f6849))
+
+## [1.5.2](https://github.com/Tosox/revanced-patches/compare/v1.5.1...v1.5.2) (2026-03-20)
+
+
+### Bug Fixes
+
+* patches.api definition ([6470a84](https://github.com/Tosox/revanced-patches/commit/6470a84892e6c46044bc96d1d224a7cb5506581d))
+* **TickTick:** Wrong method signature ([49e24a9](https://github.com/Tosox/revanced-patches/commit/49e24a9507f68536d1a812ca568288b4e21c4dcc))
+* **workflow:** Release workflow ([157a551](https://github.com/Tosox/revanced-patches/commit/157a55168717f29afe00dcdacc9c0e445589cea3))
+* **workflow:** Release workflow ([61fe90d](https://github.com/Tosox/revanced-patches/commit/61fe90d2c954d4692b3be45425c67dcad5709efd))
+* **workflow:** Release workflow ([ab97029](https://github.com/Tosox/revanced-patches/commit/ab970296357702a9fb9412ba58875509fb9d65bc))
+
+## [1.5.2-dev.3](https://github.com/Tosox/revanced-patches/compare/v1.5.2-dev.2...v1.5.2-dev.3) (2026-03-20)
+
+
+### Bug Fixes
+
+* patches.api definition ([6470a84](https://github.com/Tosox/revanced-patches/commit/6470a84892e6c46044bc96d1d224a7cb5506581d))
+
+## [1.5.2-dev.2](https://github.com/Tosox/revanced-patches/compare/v1.5.2-dev.1...v1.5.2-dev.2) (2026-03-20)
+
+
+### Bug Fixes
+
+* **TickTick:** Wrong method signature ([49e24a9](https://github.com/Tosox/revanced-patches/commit/49e24a9507f68536d1a812ca568288b4e21c4dcc))
+
+## [1.5.2-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.5.1...v1.5.2-dev.1) (2026-03-20)
+
+
+### Bug Fixes
+
+* **workflow:** Release workflow ([157a551](https://github.com/Tosox/revanced-patches/commit/157a55168717f29afe00dcdacc9c0e445589cea3))
+* **workflow:** Release workflow ([61fe90d](https://github.com/Tosox/revanced-patches/commit/61fe90d2c954d4692b3be45425c67dcad5709efd))
+* **workflow:** Release workflow ([ab97029](https://github.com/Tosox/revanced-patches/commit/ab970296357702a9fb9412ba58875509fb9d65bc))
+
+## [1.5.1](https://github.com/Tosox/revanced-patches/compare/v1.5.0...v1.5.1) (2025-10-22)
+
+
+### Bug Fixes
+
+* **Super Mario:** Fix `Offline Privacy` patch ([55d8212](https://github.com/Tosox/revanced-patches/commit/55d8212abac829b3a0ee717487abec191a8c4c8d))
+
+## [1.5.1-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.5.0...v1.5.1-dev.1) (2025-10-22)
+
+
+### Bug Fixes
+
+* **Super Mario:** Fix `Offline Privacy` patch ([55d8212](https://github.com/Tosox/revanced-patches/commit/55d8212abac829b3a0ee717487abec191a8c4c8d))
+
+# [1.5.0](https://github.com/Tosox/revanced-patches/compare/v1.4.0...v1.5.0) (2025-10-21)
+
+
+### Bug Fixes
+
+* **Super Mario:** Fix `Offline Privacy` patch ([c22ba76](https://github.com/Tosox/revanced-patches/commit/c22ba76110d362d3678fdeda7ba36e3441f71dd8))
+
+
+### Features
+
+* **Super Mario:** Add `Offline Privacy` patch ([855bf70](https://github.com/Tosox/revanced-patches/commit/855bf70412d9fcf3e785b4ce99e100dec9123bad))
+
+# [1.5.0-dev.2](https://github.com/Tosox/revanced-patches/compare/v1.5.0-dev.1...v1.5.0-dev.2) (2025-10-21)
+
+
+### Bug Fixes
+
+* **Super Mario:** Fix `Offline Privacy` patch ([c22ba76](https://github.com/Tosox/revanced-patches/commit/c22ba76110d362d3678fdeda7ba36e3441f71dd8))
+
+# [1.5.0-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.4.0...v1.5.0-dev.1) (2025-10-21)
+
+
+### Features
+
+* **Super Mario:** Add `Offline Privacy` patch ([855bf70](https://github.com/Tosox/revanced-patches/commit/855bf70412d9fcf3e785b4ce99e100dec9123bad))
+
+# [1.4.0](https://github.com/Tosox/revanced-patches/compare/v1.3.0...v1.4.0) (2025-10-09)
+
+
+### Features
+
+* **Flatastic:** Add `Unlock Premium` patch ([e1dea42](https://github.com/Tosox/revanced-patches/commit/e1dea4259e7b185f31bf08a0aaf2df51857f7156))
+
+# [1.4.0-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.3.0...v1.4.0-dev.1) (2025-10-09)
+
+
+### Features
+
+* **Flatastic:** Add `Unlock Premium` patch ([e1dea42](https://github.com/Tosox/revanced-patches/commit/e1dea4259e7b185f31bf08a0aaf2df51857f7156))
+
+# [1.3.0](https://github.com/Tosox/revanced-patches/compare/v1.2.2...v1.3.0) (2025-10-05)
+
+
+### Bug Fixes
+
+* **TickTick:** Fix `Unlock Pro` patch ([a86ec51](https://github.com/Tosox/revanced-patches/commit/a86ec51ddbdf6ec0cead190f80528ecece978c75))
+
+
+### Features
+
+* **kicker:** Add `Unlock Pur` and `Unlock Plus` patches ([b06d012](https://github.com/Tosox/revanced-patches/commit/b06d012292da9875aa4ee39e9c360e059d19c04e))
+
+# [1.3.0-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.2.3-dev.4...v1.3.0-dev.1) (2025-10-03)
+
+
+### Features
+
+* **kicker:** Add `Unlock Pur` and `Unlock Plus` patches ([b06d012](https://github.com/Tosox/revanced-patches/commit/b06d012292da9875aa4ee39e9c360e059d19c04e))
+
+## [1.2.3-dev.4](https://github.com/Tosox/revanced-patches/compare/v1.2.3-dev.3...v1.2.3-dev.4) (2025-10-02)
+
+
+### Bug Fixes
+
+* **TickTick:** Fix `Unlock Pro` patch ([a86ec51](https://github.com/Tosox/revanced-patches/commit/a86ec51ddbdf6ec0cead190f80528ecece978c75))
+* **TickTick:** Try fix `Unlock Pro` patch ([a7ead05](https://github.com/Tosox/revanced-patches/commit/a7ead052f01d5f85db9efeafb4a1888b1853a7b0))
+
+## [1.2.3-dev.3](https://github.com/Tosox/revanced-patches/compare/v1.2.3-dev.2...v1.2.3-dev.3) (2025-10-02)
+
+
+### Bug Fixes
+
+* **TickTick:** Try fix `Unlock Pro` patch ([c983aa4](https://github.com/Tosox/revanced-patches/commit/c983aa456e95cce32fc974ceba4122f2f24f45a2))
+
+## [1.2.3-dev.2](https://github.com/Tosox/revanced-patches/compare/v1.2.3-dev.1...v1.2.3-dev.2) (2025-10-02)
+
+
+### Bug Fixes
+
+* **TickTick:** Try fix `Unlock Pro` patch ([6d670cb](https://github.com/Tosox/revanced-patches/commit/6d670cba4a9b34179d513458792abfed6c754aec))
+
+## [1.2.3-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.2.2...v1.2.3-dev.1) (2025-10-02)
+
+
+### Bug Fixes
+
+* **TickTick:** Try fix `Unlock Pro` patch ([6ebfb0e](https://github.com/Tosox/revanced-patches/commit/6ebfb0e378cd5b2cc22d3914ebc0a5edbb0df6cb))
+
+## [1.2.2](https://github.com/Tosox/revanced-patches/compare/v1.2.1...v1.2.2) (2025-10-02)
+
+
+### Bug Fixes
+
+* **Project setup:** Try fix project setup ([7c279c6](https://github.com/Tosox/revanced-patches/commit/7c279c6a296a75299f39066308804429d5516ec3))
+
+## [1.2.2-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.2.1...v1.2.2-dev.1) (2025-10-02)
+
+
+### Bug Fixes
+
+* **Project setup:** Try fix project setup ([7c279c6](https://github.com/Tosox/revanced-patches/commit/7c279c6a296a75299f39066308804429d5516ec3))
+
+## [1.2.1](https://github.com/Tosox/revanced-patches/compare/v1.2.0...v1.2.1) (2025-09-30)
+
+
+### Bug Fixes
+
+* **Earphone Alarm:** Fix `Unlock Premium` patch ([d5bca27](https://github.com/Tosox/revanced-patches/commit/d5bca272976504a869565326595babce2ba176bc))
+
+## [1.2.1-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.2.0...v1.2.1-dev.1) (2025-09-30)
+
+
+### Bug Fixes
+
+* **Earphone Alarm:** Fix `Unlock Premium` patch ([d5bca27](https://github.com/Tosox/revanced-patches/commit/d5bca272976504a869565326595babce2ba176bc))
+
+# [1.2.0](https://github.com/Tosox/revanced-patches/compare/v1.1.1...v1.2.0) (2025-09-30)
+
+
+### Features
+
+* **TickTick:** Try add `Unlock Pro` patch ([a979324](https://github.com/Tosox/revanced-patches/commit/a979324cd968813fc2d1424f661baed8eb024289))
+
+# [1.2.0-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.1.1...v1.2.0-dev.1) (2025-09-30)
+
+
+### Features
+
+* **TickTick:** Try add `Unlock Pro` patch ([a979324](https://github.com/Tosox/revanced-patches/commit/a979324cd968813fc2d1424f661baed8eb024289))
+
+## [1.1.1](https://github.com/Tosox/revanced-patches/compare/v1.1.0...v1.1.1) (2025-09-29)
+
+
+### Bug Fixes
+
+* **Earphone Alarm:** Fix `Unlock Premium` patch package name ([53f0bf8](https://github.com/Tosox/revanced-patches/commit/53f0bf82b9629b2f447be7a553f7574769b47048))
+
+## [1.1.1-dev.1](https://github.com/Tosox/revanced-patches/compare/v1.1.0...v1.1.1-dev.1) (2025-09-29)
+
+
+### Bug Fixes
+
+* **Earphone Alarm:** Fix `Unlock Premium` patch package name ([53f0bf8](https://github.com/Tosox/revanced-patches/commit/53f0bf82b9629b2f447be7a553f7574769b47048))
+
+# [1.1.0](https://github.com/Tosox/revanced-patches/compare/v1.0.0...v1.1.0) (2025-09-29)
+
+
+### Features
+
+* **Earphone Alarm:** Add `Unlock Premium` patch ([5d966e8](https://github.com/Tosox/revanced-patches/commit/5d966e8ea0db3776df4a490fc8d8e9a7cc09ba08))
+
+# 1.0.0 (2025-09-29)
+
+
+### Features
+
+* **MEGA:** Add `Hide Ads` patch ([3cdf108](https://github.com/Tosox/revanced-patches/commit/3cdf1083d7e727c2ac105efe107e9ed46016b82b))

@@ -1,0 +1,24 @@
+services:
+  # Build a slim, standalone .rvp containing ONLY the view-once patch,
+  # ready to be loaded into ReVanced Manager alongside the official bundle.
+  # Run with: docker compose run --rm slim
+  slim:
+    build:
+      context: .
+      args:
+        PATCHES_TAG: "v6.1.0"       # revanced-patches git tag
+    volumes:
+      - ./patch-src:/input/patch-src:ro
+      - ./build-slim-rvp.sh:/build/build-slim-rvp.sh:ro
+      - ./output:/output
+      - gradle-cache:/root/.gradle  # persist Gradle cache across runs
+    environment:
+      ORG_GRADLE_PROJECT_githubPackagesUsername: ${GITHUB_PACKAGES_USERNAME}
+      ORG_GRADLE_PROJECT_githubPackagesPassword: ${GITHUB_PACKAGES_PASSWORD}
+      ORG_GRADLE_PROJECT_gaborUsername: ${GITHUB_PACKAGES_USERNAME}
+      ORG_GRADLE_PROJECT_gaborPassword: ${GITHUB_PACKAGES_PASSWORD}
+      ORG_GRADLE_PROJECT_gprUsername: ${GITHUB_PACKAGES_USERNAME}
+      ORG_GRADLE_PROJECT_gprPassword: ${GITHUB_PACKAGES_PASSWORD}
+
+volumes:
+  gradle-cache:

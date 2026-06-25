@@ -1,0 +1,101 @@
+# [1.2.0](https://github.com/blazskufca/revanced-patch/compare/v1.1.1...v1.2.0) (2026-01-09)
+
+
+### Features
+
+* Unlock com.sovworks.eds ([b0a8ad6](https://github.com/blazskufca/revanced-patch/commit/b0a8ad6f7cefa6a414e1d9d74672769dd4466c60))
+
+## [1.1.1](https://github.com/blazskufca/revanced-patch/compare/v1.1.0...v1.1.1) (2026-01-05)
+
+
+### Bug Fixes
+
+* fingerprint for com.sovworks.projecteds? ([568f207](https://github.com/blazskufca/revanced-patch/commit/568f207fba2e1a920b49101e10351c361642268f))
+
+# [1.1.0](https://github.com/blazskufca/revanced-patch/compare/v1.0.3...v1.1.0) (2026-01-05)
+
+
+### Features
+
+* test UnlockModulesPatch for com.sovworks.projecteds ([6547d29](https://github.com/blazskufca/revanced-patch/commit/6547d29664b72acb1dcbbe923dac8be850e68b42))
+
+## [1.0.3](https://github.com/blazskufca/revanced-patch/compare/v1.0.2...v1.0.3) (2026-01-05)
+
+
+### Bug Fixes
+
+* Revert UnlockPlusPatch to modify method implementation ([c8b97b2](https://github.com/blazskufca/revanced-patch/commit/c8b97b275a621b17f4bee236602d6570f47be06a))
+* UnlockPlusPatch to modify method implementation ([94075d8](https://github.com/blazskufca/revanced-patch/commit/94075d8fc2e8fce4924a327071ceb6553d47113c))
+
+## [1.0.2](https://github.com/blazskufca/revanced-patches/compare/v1.0.1...v1.0.2) (2026-01-05)
+
+
+### Bug Fixes
+
+* lib.versions.toml ([3a249f2](https://github.com/blazskufca/revanced-patches/commit/3a249f2d74aad6a200b997a35bc9107c9ccbb6dd))
+
+## [1.0.1](https://github.com/blazskufca/revanced-patches/compare/v1.0.0...v1.0.1) (2026-01-04)
+
+
+### Bug Fixes
+
+* UnlockPlusPatch for com.mladinska.mkplus ([a611eef](https://github.com/blazskufca/revanced-patches/commit/a611eef96f6a8251028fdacc616c7c006d00cd6e))
+
+# 1.0.0 (2026-01-04)
+
+
+### Features
+
+* UnlockPlusPatch for com.mladinska.mkplus ([e09f029](https://github.com/blazskufca/revanced-patches/commit/e09f029e4d65667dd565c72d7dd54a052048f0f5))
+
+## [1.0.4](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.3...v1.0.4) (2024-11-05)
+
+## [1.0.4-dev.2](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.4-dev.1...v1.0.4-dev.2) (2024-11-05)
+
+## [1.0.4-dev.1](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.3...v1.0.4-dev.1) (2024-09-30)
+
+## [1.0.3](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.2...v1.0.3) (2024-09-08)
+
+
+### Bug Fixes
+
+* Upload asset signature by fixing asset path glob pattern ([1378304](https://github.com/ReVanced/revanced-patches-template/commit/1378304809092e1f5a5c8fb4beb0964496222059))
+
+## [1.0.3-dev.1](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.2...v1.0.3-dev.1) (2024-09-08)
+
+
+### Bug Fixes
+
+* Upload asset signature by fixing asset path glob pattern ([1378304](https://github.com/ReVanced/revanced-patches-template/commit/1378304809092e1f5a5c8fb4beb0964496222059))
+
+## [1.0.2](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.1...v1.0.2) (2024-09-08)
+
+## [1.0.2-dev.1](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.1...v1.0.2-dev.1) (2024-08-08)
+
+## [1.0.1](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.0...v1.0.1) (2024-02-21)
+
+
+### Bug Fixes
+
+* Compile DEX without debugging information ([73f6506](https://github.com/ReVanced/revanced-patches-template/commit/73f6506bccc01e5622a6e19bedcf6d54d3f701c7))
+
+## [1.0.1-dev.1](https://github.com/ReVanced/revanced-patches-template/compare/v1.0.0...v1.0.1-dev.1) (2024-02-21)
+
+
+### Bug Fixes
+
+* Compile DEX without debugging information ([73f6506](https://github.com/ReVanced/revanced-patches-template/commit/73f6506bccc01e5622a6e19bedcf6d54d3f701c7))
+
+# 1.0.0 (2024-01-26)
+
+
+### Features
+
+* Init ([66be625](https://github.com/ReVanced/revanced-patches-template/commit/66be625f25ee2d678dac62a5bf4daa631284f8f6))
+
+# 1.0.0-dev.1 (2024-01-26)
+
+
+### Features
+
+* Init ([66be625](https://github.com/ReVanced/revanced-patches-template/commit/66be625f25ee2d678dac62a5bf4daa631284f8f6))
