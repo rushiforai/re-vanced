@@ -6,6 +6,7 @@ Patch lists are collapsed by default. Expand a bundle to inspect its generated p
 ### API v4
 | Bundle | Patches | Apps | Status |
 | --- | ---: | ---: | --- |
+| [AppleMusic](#-applemusic-bundle-patch-list) | 2 | 1 | Generated |
 | [ReVanced](#-revanced-bundle-patch-list) | 288 | 89 | Generated |
 | [Inotia00](#-inotia00-bundle-patch-list) | 127 | 4 | Generated |
 | [MTGA](#-mtga-bundle-patch-list) | 22 | 1 | Generated |
@@ -43,6 +44,7 @@ Patch lists are collapsed by default. Expand a bundle to inspect its generated p
 ### Morphe
 | Bundle | Patches | Apps | Status |
 | --- | ---: | ---: | --- |
+| [Ynotzort](#-ynotzort-bundle-patch-list) | 1 | 1 | Generated |
 | [BrayDog2010](#-braydog2010-bundle-patch-list) | 2 | 1 | Generated |
 | [TS2](#-ts2-bundle-patch-list) | 1 | 1 | Generated |
 | [Samsung-Morphe](#-samsung-morphe-bundle-patch-list) | 2 | 1 | Generated |
@@ -53,7 +55,7 @@ Patch lists are collapsed by default. Expand a bundle to inspect its generated p
 | [TS-Patches](#-ts-patches-bundle-patch-list) | 1 | 1 | Generated |
 | [Zpatches](#-zpatches-bundle-patch-list) | 6 | 3 | Generated |
 | [iHealth-Morphe](#-ihealth-morphe-bundle-patch-list) | 6 | 2 | Generated |
-| [Hoomans-Morphe](#-hoomans-morphe-bundle-patch-list) | 41 | 33 | Generated |
+| [Hoomans-Morphe](#-hoomans-morphe-bundle-patch-list) | 40 | 32 | Generated |
 | [Realme-Link](#-realme-link-bundle-patch-list) | 1 | 1 | Generated |
 | [ProGuard](#-proguard-bundle-patch-list) | 2 | 2 | Generated |
 | [Lain](#-lain-bundle-patch-list) | 26 | 15 | Generated |
@@ -72,9 +74,9 @@ Patch lists are collapsed by default. Expand a bundle to inspect its generated p
 | [Pepper-Morphe](#-pepper-morphe-bundle-patch-list) | 17 | 10 | Generated |
 | [Fin-Tweaks](#-fin-tweaks-bundle-patch-list) | - | - | Pending patch list |
 | [Kondratjev](#-kondratjev-bundle-patch-list) | 23 | 12 | Generated |
-| [Hoo-dles](#-hoo-dles-bundle-patch-list) | 74 | 51 | Generated |
+| [Hoo-dles](#-hoo-dles-bundle-patch-list) | 75 | 52 | Generated |
 | [AmpleReVanced](#-amplerevanced-bundle-patch-list) | 87 | 7 | Generated |
-| [Morphe](#-morphe-bundle-patch-list) | 117 | 4 | Generated |
+| [Morphe](#-morphe-bundle-patch-list) | 118 | 4 | Generated |
 | [Patcheddit](#-patcheddit-bundle-patch-list) | 39 | 19 | Generated |
 | [RVX-Morphed](#-rvx-morphed-bundle-patch-list) | 113 | 3 | Generated |
 | [IMXEren](#-imxeren-bundle-patch-list) | 2 | 2 | Generated |
@@ -85,7 +87,7 @@ Patch lists are collapsed by default. Expand a bundle to inspect its generated p
 | [Docbt](#-docbt-bundle-patch-list) | 6 | 3 | Generated |
 | [PixelPusher247](#-pixelpusher247-bundle-patch-list) | 1 | 1 | Generated |
 | [Rabilrbl](#-rabilrbl-bundle-patch-list) | 2 | 1 | Generated |
-| [Jasonwu1994](#-jasonwu1994-bundle-patch-list) | 20 | 1 | Generated |
+| [Jasonwu1994](#-jasonwu1994-bundle-patch-list) | 21 | 1 | Generated |
 | [RealCyberwash](#-realcyberwash-bundle-patch-list) | 1 | 1 | Generated |
 | [Paresh-Maheshwari](#-paresh-maheshwari-bundle-patch-list) | 55 | 20 | Generated |
 | [Binarymend](#-binarymend-bundle-patch-list) | 11 | 7 | Generated |
@@ -107,7 +109,7 @@ Patch lists are collapsed by default. Expand a bundle to inspect its generated p
 | [Ameen-Morphe](#-ameen-morphe-bundle-patch-list) | 2 | 2 | Generated |
 | [Kolaron](#-kolaron-bundle-patch-list) | 1 | 1 | Generated |
 | [ImmortalZeus](#-immortalzeus-bundle-patch-list) | 2 | 2 | Generated |
-| [Ajstrick81-AndroidTV](#-ajstrick81-androidtv-bundle-patch-list) | 12 | 9 | Generated |
+| [Ajstrick81-AndroidTV](#-ajstrick81-androidtv-bundle-patch-list) | 14 | 9 | Generated |
 | [Icysymmetra-TikTok](#-icysymmetra-tiktok-bundle-patch-list) | 15 | 1 | Generated |
 | [AlexNaga](#-alexnaga-bundle-patch-list) | 2 | 1 | Generated |
 | [Rushiranpise](#-rushiranpise-bundle-patch-list) | 67 | 48 | Generated |
@@ -125,6 +127,31 @@ Patch lists are collapsed by default. Expand a bundle to inspect its generated p
 | [AyushTNM](#-ayushtnm-bundle-patch-list) | 3 | 1 | Generated |
 | [Arsclib](#-arsclib-bundle-patch-list) | 16 | 2 | Generated |
 | [Hepolise](#-hepolise-bundle-patch-list) | 1 | 1 | Generated |
+
+---
+### 🧩 AppleMusic Bundle Patch List:
+[📦 AppleMusic-Patches-Bundle](https://github.com/Jman-Github/ReVanced-Patch-Bundles#-applemusic-patches-bundle-api-v4)
+<details>
+<summary><b>AppleMusic</b> - 2 patches, 1 app</summary>
+
+| **Name** | **Description** | **Compatible Apps** | **Compatible Versions** |
+|----------|---------------|---------------------|-------------------------|
+| ```Fix Dolby Atmos for TV``` | ```Replaces audio/eac3-joc to audio/eac3 to make it working on TV!``` | ```com.apple.android.music``` | ```All versions``` |
+| ```Fix leanback for TV``` | ```Make leanback & touchscreen not required!``` | ```com.apple.android.music``` | ```All versions``` |
+
+</details>
+
+---
+### 🧩 Ynotzort Bundle Patch List:
+[📦 Ynotzort-Patches-Bundle](https://github.com/Jman-Github/ReVanced-Patch-Bundles#-ynotzort-patches-bundle-morphe)
+<details>
+<summary><b>Ynotzort</b> - 1 patch, 1 app</summary>
+
+| **Name** | **Description** | **Compatible Apps** | **Compatible Versions** |
+|----------|---------------|---------------------|-------------------------|
+| ```Disable TargoBank root check``` | ```Neutralises the splash 'rooted device' block by forcing the security verdict getters (o.aNj.con/Aux/AuX) to return false, so the app proceeds to the login screen. Validated on V12.68.1 (versionCode 2019102761). Note: re-signing breaks Play Integrity app-recognition; keep the app in the Magisk denylist.``` | ```TARGOBANK``` | ```All versions``` |
+
+</details>
 
 ---
 ### 🧩 BrayDog2010 Bundle Patch List:
@@ -270,7 +297,7 @@ Patch lists are collapsed by default. Expand a bundle to inspect its generated p
 ### ?? Hoomans-Morphe Bundle Patch List:
 [?? Hoomans-Morphe-Patches-Bundle](https://github.com/Jman-Github/ReVanced-Patch-Bundles#-hoomans-morphe-patches-bundle-morphe)
 <details>
-<summary><b>Hoomans-Morphe</b> - 41 patches, 33 apps</summary>
+<summary><b>Hoomans-Morphe</b> - 40 patches, 32 apps</summary>
 
 | **Name** | **Description** | **Compatible Apps** | **Compatible Versions** |
 |----------|---------------|---------------------|-------------------------|
@@ -298,7 +325,6 @@ Patch lists are collapsed by default. Expand a bundle to inspect its generated p
 | ```Remove ads``` | ```Removes the ads Moovit shows around the map and search and between screens.``` | ```Moovit``` | ```All versions``` |
 | ```Unlock Moovit+``` | ```Unlocks the Moovit+ extras without paying, like the extra sort and time-of-travel options and compare-on-map, and stops the upgrade-to-Moovit+ popups that nag you on app open. Things Moovit runs on its servers, like transit ticketing, still need the real subscription. Pair this with Remove ads for the ad-free part of Moovit+.``` | ```Moovit``` | ```All versions``` |
 | ```Use your own Maps API key [REQUIRED]``` | ```Required for the map to load. Patching breaks Moovit's built-in Google Maps key, so you have to supply your own from a free Google Cloud project. In this patch's option, create a project, enable Maps SDK for Android, turn on billing, make an API key, and paste it in (leaving it unrestricted is easiest). Remove ads and Unlock Moovit+ both pull this in, so the map keeps working with either.``` | ```Moovit``` | ```All versions``` |
-| ```Unlock Pro``` | ```Unlocks the Pro features in Photo Editor Polish without a subscription and drops the ads and upgrade prompts. The AI tools and cloud assets, which the developer runs on its servers, stay locked.``` | ```Photo Editor Polish``` | ```All versions``` |
 | ```Unlock Premium``` | ```Unlocks Projectivy Launcher's premium so the paywall stops sending you to the upgrade screen. Display profiles, custom wallpapers and backgrounds, parental controls, and the locked settings and customization options all open up. The gate is decided on the device, so there is no account to sign in to.``` | ```Projectivy Launcher``` | ```All versions``` |
 | ```Unlock Plus``` | ```Removes ads and unlocks the on-device Quizlet Plus features without a subscription. The AI tools, like Magic Notes and generation, run on Quizlet's servers and stay locked.``` | ```Quizlet``` | ```All versions``` |
 | ```Unlock Premium``` | ```Unlocks Replaio's premium and removes the ads, so the equalizer, sleep timer, alarm, recording, and favorites all open up. Data Replaio keeps on its servers (synced favorites past the free cap) still needs an account that paid.``` | ```Replaio``` | ```All versions``` |
@@ -2294,12 +2320,12 @@ _No generated patch list is available yet. The bundle metadata exists, but no `*
 ### 🧩 Hoo-dles Bundle Patch List:
 [📦 Hoo-dles-Patches-Bundle](https://github.com/Jman-Github/ReVanced-Patch-Bundles#-hoo-dles-patches-bundle-morphe)
 <details>
-<summary><b>Hoo-dles</b> - 74 patches, 51 apps</summary>
+<summary><b>Hoo-dles</b> - 75 patches, 52 apps</summary>
 
 | **Name** | **Description** | **Compatible Apps** | **Compatible Versions** |
 |----------|---------------|---------------------|-------------------------|
 | ```Enable Premium``` | ```Enables app features locked behind the subscription paywall.``` | ```AdGuard``` | ```All versions``` |
-| ```Enable Peak membership``` | ```Enables app features locked behind the subscription paywall.``` | ```AllTrails``` | ```All versions``` |
+| ```Enable Peak membership``` | ```Enables some app features locked behind the subscription paywall. Not all premium functionality is available.``` | ```AllTrails``` | ```All versions``` |
 | ```Enable Premium``` | ```Enables app features locked behind the subscription paywall.``` | ```Avocards``` | ```All versions``` |
 | ```Enable Premium``` | ```Enables app features locked behind the subscription paywall.``` | ```Busuu``` | ```All versions``` |
 | ```Enable Plus``` | ```Enable Plus membership (not all features are available). There is a strict version requirement for this patch.``` | ```Cake``` | ```All versions``` |
@@ -2314,6 +2340,7 @@ _No generated patch list is available yet. The bundle metadata exists, but no `*
 | ```Force Native Keyboard``` | ```When typing in normal lessons, Eggbun forces you to use their own on-screen keyboard. This patches forces the use of the default OS keyboard.``` | ```Eggbun``` | ```All versions``` |
 | ```Enable FotMob+``` | ```Enables app features locked behind the subscription paywall.``` | ```FotMob``` | ```All versions``` |
 | ```AMOLED dark theme``` | ```Changes the default dark theme to use true blacks for AMOLED screens.``` | ```GitHub``` | ```All versions``` |
+| ```Disable ads``` | ```Disables all ads contained within the UI.``` | ```Goodreads``` | ```All versions``` |
 | ```Enable custom tabs``` | ```Open articles using your default browser.``` | ```Google News``` | ```All versions``` |
 | ```MicroG integration``` | ```Allows the app to work without root by using MicroG instead of Google Play Services.``` | ```Google News``` | ```All versions``` |
 | ```Enable Premium``` | ```Enables app features locked behind the subscription paywall.``` | ```HelloChinese``` | ```All versions``` |
@@ -2597,7 +2624,7 @@ _No generated patch list is available yet. The bundle metadata exists, but no `*
 ### 🧩 Morphe Bundle Patch List:
 [📦 Morphe-Patches-Bundle](https://github.com/Jman-Github/ReVanced-Patch-Bundles#-morphe-patches-bundle-morphe)
 <details>
-<summary><b>Morphe</b> - 117 patches, 4 apps</summary>
+<summary><b>Morphe</b> - 118 patches, 4 apps</summary>
 
 | **Name** | **Description** | **Compatible Apps** | **Compatible Versions** |
 |----------|---------------|---------------------|-------------------------|
@@ -2691,6 +2718,7 @@ _No generated patch list is available yet. The bundle metadata exists, but no `*
 | ```Theme``` | ```Adds options for theming and applies a custom background theme (dark background theme defaults to pure black).``` | ```YouTube``` | ```All versions``` |
 | ```Video ads``` | ```Adds an option to remove ads in the video player.``` | ```YouTube``` | ```All versions``` |
 | ```Video quality``` | ```Adds options to set default video qualities and always use the advanced video quality menu.``` | ```YouTube``` | ```All versions``` |
+| ```Voice over translation``` | ```Adds additional voice over languages using text-to-speech synchronized to the video playback.``` | ```YouTube``` | ```All versions``` |
 | ```Bypass certificate checks``` | ```Bypasses certificate checks which prevent YouTube Music from working on Android Auto.``` | ```YouTube Music``` | ```All versions``` |
 | ```Change header``` | ```Adds an option to change the header logo in the top left corner of the app.``` | ```YouTube Music``` | ```All versions``` |
 | ```Change miniplayer color``` | ```Adds an option to change the miniplayer background color to match the fullscreen player.``` | ```YouTube Music``` | ```All versions``` |
@@ -3293,7 +3321,7 @@ _No generated patch list is available yet. The bundle metadata exists, but no `*
 ### 🧩 Jasonwu1994 Bundle Patch List:
 [📦 Jasonwu1994-Patches-Bundle](https://github.com/Jman-Github/ReVanced-Patch-Bundles#-jasonwu1994-patches-bundle-morphe)
 <details>
-<summary><b>Jasonwu1994</b> - 20 patches, 1 app</summary>
+<summary><b>Jasonwu1994</b> - 21 patches, 1 app</summary>
 
 | **Name** | **Description** | **Compatible Apps** | **Compatible Versions** |
 |----------|---------------|---------------------|-------------------------|
@@ -3314,6 +3342,7 @@ _No generated patch list is available yet. The bundle metadata exists, but no `*
 | ```Latin Globe Key Ignore Interval``` | ```新增英文鍵盤地球鍵忽略時間覆寫，可獨立控制輸入後切語言延遲 Add an independent English globe key ignore interval override for post-typing language-switch delay.``` | ```com.google.android.inputmethod.latin``` | ```17.0.10.880768217-release-arm64-v8a``` |
 | ```Package Rename``` | ```將套件名稱改成 dev.jason.com.google.android.inputmethod.latin 以便共存安裝 Rename the package to dev.jason.com.google.android.inputmethod.latin so it can be installed alongside the official Gboard.``` | ```com.google.android.inputmethod.latin``` | ```17.0.10.880768217-release-arm64-v8a``` |
 | ```Settings Homepage Override``` | ```允許切換新版或舊版 Gboard 設定頁面 Allow switching between the new and legacy Gboard settings pages.``` | ```com.google.android.inputmethod.latin``` | ```17.0.10.880768217-release-arm64-v8a``` |
+| ```Swipeable Custom Top Row``` | ```滑動鍵盤第一排，在原生列與可自訂文字/JavaScript 列之間切換 Swipe the keyboard top row to switch between the stock row and a customizable text/JavaScript row.``` | ```com.google.android.inputmethod.latin``` | ```17.0.10.880768217-release-arm64-v8a``` |
 | ```Web Clipboard``` | ```新增手機自架的 Web Clipboard，支援瀏覽器同步、配對碼與快速設定開關 Add the phone-hosted Web Clipboard with browser sync, pairing, and a Quick Settings Tile.``` | ```com.google.android.inputmethod.latin``` | ```17.0.10.880768217-release-arm64-v8a``` |
 | ```Zhuyin Quick Traditional/Simplified Toggle``` | ```注音 ㄥ 上滑快速切換繁簡 Swipe up on Zhuyin ㄥ to quickly toggle Traditional and Simplified Chinese.``` | ```com.google.android.inputmethod.latin``` | ```17.0.10.880768217-release-arm64-v8a``` |
 | ```Zhuyin Slide Input``` | ```注音鍵盤支持上下滑輸入 Enable slide-up and slide-down input on the Zhuyin keyboard.``` | ```com.google.android.inputmethod.latin``` | ```17.0.10.880768217-release-arm64-v8a``` |
@@ -3781,21 +3810,23 @@ _No generated patch list is available yet. The bundle metadata exists, but no `*
 ### 🧩 Ajstrick81-AndroidTV Bundle Patch List:
 [📦 Ajstrick81-AndroidTV-Patches-Bundle](https://github.com/Jman-Github/ReVanced-Patch-Bundles#-ajstrick81-androidtv-patches-bundle-morphe)
 <details>
-<summary><b>Ajstrick81-AndroidTV</b> - 12 patches, 9 apps</summary>
+<summary><b>Ajstrick81-AndroidTV</b> - 14 patches, 9 apps</summary>
 
 | **Name** | **Description** | **Compatible Apps** | **Compatible Versions** |
 |----------|---------------|---------------------|-------------------------|
 | ```Disable auto-updates``` | ```Prevents Google Play Store from automatically replacing the patched APK with the official unpatched version.``` | ```com.amazon.amazonvideo.livingroom``` | ```6.23.23+v15.5.0.70-armv7a``` |
-| ```Override certificate pinning``` | ```Allows HTTPS traffic inspection tools like AdGuard Premium to intercept app connections. Enables consistent pre-roll suppression when used alongside AdGuard Premium.``` | ```com.amazon.amazonvideo.livingroom``` | ```6.23.23+v15.5.0.70-armv7a``` |
+| ```GMB send diagnostic (debug)``` | ```Diagnostic-only: logs outbound GMB messages (Java→native) to logcat to test whether the send direction carries ad-related traffic.``` | ```com.amazon.amazonvideo.livingroom``` | ```6.23.23+v15.5.0.70-armv7a``` |
+| ```Override certificate pinning``` | ```Adds a network_security_config trusting user CAs (no pin sets) so AdGuard Premium can inspect the app's platform-stack HTTPS. Optional adjunct: Prime Video's ad plane is largely native libcurl, so DNS blocking is the primary tool.``` | ```com.amazon.amazonvideo.livingroom``` | ```6.23.23+v15.5.0.70-armv7a``` |
 | ```Prime Video extension``` | ```Integrates the Prime Video ATV extension for ad group skipping.``` | ```com.amazon.amazonvideo.livingroom``` | ```6.23.23+v15.5.0.70-armv7a``` |
 | ```Skip ads``` | ```Multi-layer ad suppression targeting the SSAI schedule, impression reporting, and the Volley network chokepoint.``` | ```com.amazon.amazonvideo.livingroom``` | ```6.23.23+v15.5.0.70-armv7a``` |
 | ```MLB At Bat Android TV``` | ```Removes VOD ads and shows a commercial-break overlay over live gambling ads while preserving live game playback.``` | ```com.bamnetworks.mobile.android.gameday.atbat``` | ```26.8.1.1``` |
 | ```Paramount+ Android TV``` | ```Removes VOD ads and pause ads while preserving live TV.``` | ```com.cbs.ott``` | ```16.12.0, 16.8.0``` |
 | ```Disney+ Android TV``` | ```Removes mid-roll / pre-roll ads and pause ads.``` | ```com.disney.disneyplus``` | ```26.6.0+rc5-2026.04.21, 26.8.0+rc6-2026.05.20, 26.9.2+rc1-2026.06.12``` |
 | ```Skip ads``` | ```Suppresses all ad delivery systems in Fox One Android TV: Google IMA/DAI for VOD, Yospace SSAI for live content.``` | ```com.fox.foxone``` | ```1.9.2``` |
-| ```Skip ads``` | ```Disables ad delivery via Sky SDK surgical targets (FreeWheel DI module skip, MediaTailor SSAI layers, ad-break-started no-op), AdBlockInterceptor wiring across the app NetworkingKt client and the Sky SDK addon network client, New Relic agent init no-op, and WebView shouldInterceptRequest wrapper. Validated v7.5.102 and v7.6.100.``` | ```com.peacocktv.peacockandroid``` | ```7.5.102, 7.6.100``` |
+| ```Skip ads``` | ```Disables ad delivery via Sky SDK surgical targets (FreeWheel DI module skip, MediaTailor SSAI layers, ad-break-started no-op), AdBlockInterceptor wiring on the app NetworkingKt OkHttp client, and a WebView shouldInterceptRequest wrapper. Pair with DNS filtering for full ad suppression. Validated v7.5.102 and v7.6.100.``` | ```com.peacocktv.peacockandroid``` | ```7.5.102, 7.6.100``` |
 | ```Skip ads``` | ```Suppresses all ad delivery systems in Tubi Android TV.``` | ```com.tubitv``` | ```10.20.5000``` |
-| ```Skip ads``` | ```Suppresses ViX ad delivery by disabling the FreeWheel ad provider at the config level and preventing the Innovid SSAI overlay from mounting.``` | ```com.univision.prendetv``` | ```4.46.0_tv``` |
+| ```Override certificate pinning``` | ```Allows HTTPS traffic inspection tools like AdGuard Premium to intercept app connections. Enables ViX live (Lura SSAI) ad suppression when used alongside AdGuard Premium.``` | ```com.univision.prendetv``` | ```4.46.0_tv``` |
+| ```Skip ads``` | ```Suppresses ViX ad delivery by stopping the LuraPlayer linear ad-break scheduler (client-side VAST) and preventing the Innovid SSAI ad overlay from mounting.``` | ```com.univision.prendetv``` | ```4.46.0_tv``` |
 | ```HBO Max - Disable Ads``` | ```Suppresses nonlinear overlay ads (Bolt), SSAI linear ad timeline registration (GMSS/AdSparx), and live stream preroll ad timeline entry generation for all content types.``` | ```com.wbd.hbomax``` | ```7.5.0.73, 7.2.0.41``` |
 
 </details>

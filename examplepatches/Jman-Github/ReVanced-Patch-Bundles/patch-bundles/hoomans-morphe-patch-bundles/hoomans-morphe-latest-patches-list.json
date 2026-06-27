@@ -1,5 +1,5 @@
 {
-    "version": "v1.31.0",
+    "version": "v1.31.2",
     "patches": [
         {
             "compatiblePackages": [
@@ -816,7 +816,9 @@
                 }
             ],
             "default": true,
-            "dependencies": [],
+            "dependencies": [
+                "RawResourcePatch"
+            ],
             "description": "Unlocks InShot's Pro features without a subscription: no export watermark, no ads, and the paid filters, effects, transitions, stickers and HD export open. The on-device AI tools (background remover, AI retouch, auto captions) verify the original signing key in native code, so those may not run on a re-signed build; the rest of Pro works offline.",
             "name": "Unlock Pro",
             "options": []
@@ -851,34 +853,6 @@
                 "BytecodePatch"
             ],
             "description": "Unlocks all of Liquid Gallery's Pro features without a purchase.",
-            "name": "Unlock Pro",
-            "options": []
-        },
-        {
-            "compatiblePackages": [
-                {
-                    "apkFileType": null,
-                    "appIconColor": "#F82888",
-                    "description": null,
-                    "name": "Photo Editor Polish",
-                    "packageName": "photo.editor.photoeditor.photoeditorpro",
-                    "signatures": null,
-                    "targets": [
-                        {
-                            "description": null,
-                            "isExperimental": false,
-                            "minSdk": null,
-                            "version": "1.763.262"
-                        }
-                    ]
-                }
-            ],
-            "default": true,
-            "dependencies": [
-                "BytecodePatch",
-                "RawResourcePatch"
-            ],
-            "description": "Unlocks the Pro features in Photo Editor Polish without a subscription and drops the ads and upgrade prompts. The AI tools and cloud assets, which the developer runs on its servers, stay locked.",
             "name": "Unlock Pro",
             "options": []
         },
